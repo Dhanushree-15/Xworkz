@@ -9,6 +9,6 @@ public class Clip {
 
     public void hold() {
         System.out.println("Holding a " + color + " clip.");
-}
+    }
 
 }

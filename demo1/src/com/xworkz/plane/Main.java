@@ -2,7 +2,7 @@ package com.xworkz.plane;
 
 public class Main {
     public static void main(String[] args) {
-        // Clips
+
         Clip clip1 = new Clip(Color.RED);
         Clip clip2 = new Clip(Color.BLUE);
         Clip clip3 = new Clip(Color.GREEN);
@@ -13,14 +13,14 @@ public class Main {
         Pushpa pushpa = new Pushpa();
         pushpa.useClip(clips);
 
-        // Ticket and Cricket
+
         Ticket ticket = new Ticket(TicketType.PREMIUM, 100.0);
         Cricket cricket = new Cricket(ticket);
 
-        // Brush
+        
         Brush brush = new Brush(BrushColor.WHITE);
 
-        // Virat
+
         Virat virat = new Virat(brush, clip1, ticket, cricket);
         virat.play();
         virat.clean();

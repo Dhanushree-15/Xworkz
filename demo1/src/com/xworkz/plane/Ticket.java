@@ -15,8 +15,9 @@ public class Ticket {
 
     public double sell() {
         System.out.println("Selling a " + type + " ticket for $" + (cost * 1.2)); // Example: 20% profit
-        return cost*1.2;
+        return cost * 1.2;
+    }
+
 }
 
 
-}
