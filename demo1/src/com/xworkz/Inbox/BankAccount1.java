@@ -1,9 +1,9 @@
 package com.xworkz.Inbox;
 
-public class BankAccount {
+public class BankAccount1 {
     private double balance;
 
-    public BankAccount(double initialBalance) {
+    public BankAccount1(double initialBalance) {
         if (initialBalance > 0) {
             this.balance = initialBalance;
         }

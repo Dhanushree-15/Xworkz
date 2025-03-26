@@ -1,6 +1,6 @@
 package com.xworkz.Inbox;
 
-public class Message {
+public class Message1 {
     static int count;
     static String message;
 
@@ -12,7 +12,7 @@ public class Message {
     }
 
 
-    public Message() {
+    public Message1() {
         count++;
     }
 
