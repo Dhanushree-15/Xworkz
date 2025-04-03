@@ -9,7 +9,7 @@ public class BicycleRun {
         bicycle.brakeType();
         bicycle.color();
         System.out.println("----------");
-        Bicycle bicycle1=new BicycleDetails();
+        Bicycle bicycle1=new BiCycleDetails();
         bicycle1.type();
         bicycle1.material();
         bicycle1.brakeType();
