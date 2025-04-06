@@ -1,23 +1,31 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.band.Band;
-import com.xworkz.inheritence.internal.band.RubberBand;
+import com.xworkz.inheritence.internal.drumband.DrumBand;
+import com.xworkz.inheritence.internal.drumband.RubberBand;
 
 public class BandRunner {
     public static void main(String[] args) {
-        Band band = new RubberBand();
-        band.usedForBinding();
-        band.madeOfElasticMaterial();
-        band.availableInDifferentSizes();
-        band.stretchesEasily();
-        band.usedForVariousPurposes();
+        DrumBand band1 = new DrumBand();
+        band1.bind();
+        band1.stretch();
+        band1.size();
+        band1.material();
+        band1.use();
+
+        System.out.println("-------------------");
+        DrumBand band = new RubberBand();
+        band.bind();
+        band.stretch();
+        band.size();
+        band.material();
+        band.use();
 
         System.out.println("-----------------");
         RubberBand rubberBand = new RubberBand();
-        rubberBand.usedForBinding();
-        rubberBand.madeOfElasticMaterial();
-        rubberBand.availableInDifferentSizes();
-        rubberBand.stretchesEasily();
-        rubberBand.usedForVariousPurposes();
+        rubberBand.bind();
+        rubberBand.stretch();
+        rubberBand.size();
+        rubberBand.material();
+        rubberBand.use();
     }
 }
