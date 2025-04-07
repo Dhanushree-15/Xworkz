@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.sales.Sales;
 import com.xworkz.inheritence.internal.sales.OnlineSales;
+import com.xworkz.inheritence.internal.sales.SalesUser;
 
 public class SalesRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class SalesRunner {
         onlineSales.customer();
         onlineSales.discounts();
         onlineSales.global();
+        onlineSales.trackDelivery();
+
+        System.out.println("-----------");
+
+        SalesUser user = new SalesUser();
+        user.use(sales);
+        user.use(sales2);
+        user.use(onlineSales);
     }
 }

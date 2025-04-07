@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.puppy.Puppy;
 import com.xworkz.inheritence.internal.puppy.LabradorPuppy;
+import com.xworkz.inheritence.internal.puppy.PuppyUser;
 
 public class PuppyRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PuppyRunner {
         labradorPuppy.care();
         labradorPuppy.bark();
         labradorPuppy.cuddle();
+        labradorPuppy.fetch();
+
+        System.out.println("-----------");
+
+        PuppyUser user = new PuppyUser();
+        user.use(puppy);
+        user.use(puppy2);
+        user.use(labradorPuppy);
     }
 }

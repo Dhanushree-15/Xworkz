@@ -30,4 +30,8 @@ public class Sunglasses extends Spects {
     public void customize() {
         System.out.println("Sunglasses can be customized for different tints --child");
     }
+
+    public void polarizedView() {
+        System.out.println("Sunglasses offer polarized vision for better clarity --child");
+    }
 }

@@ -30,4 +30,8 @@ public class SportsShoe extends Shoe {
     public void size() {
         System.out.println("Sports shoes come in various sizes --child");
     }
+
+    public void grip() {
+        System.out.println("Sports shoes offer excellent grip for running --child");
+    }
 }

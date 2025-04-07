@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.shoe.Shoe;
 import com.xworkz.inheritence.internal.shoe.SportsShoe;
+import com.xworkz.inheritence.internal.shoe.ShoeUser;
 
 public class ShoeRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class ShoeRunner {
         sportsShoe.style();
         sportsShoe.material();
         sportsShoe.size();
+        sportsShoe.grip();
+
+        System.out.println("-----------");
+
+        ShoeUser user = new ShoeUser();
+        user.use(shoe);
+        user.use(shoe2);
+        user.use(sportsShoe);
     }
 }

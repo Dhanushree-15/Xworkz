@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.room.Room;
 import com.xworkz.inheritence.internal.room.Bedroom;
+import com.xworkz.inheritence.internal.room.RoomUser;
 
 public class RoomRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class RoomRunner {
         bedroom.clean();
         bedroom.ventilate();
         bedroom.lightUp();
+        bedroom.sleep();
+
+        System.out.println("-----------");
+
+        RoomUser user = new RoomUser();
+        user.use(room);
+        user.use(room2);
+        user.use(bedroom);
     }
 }

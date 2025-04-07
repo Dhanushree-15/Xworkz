@@ -30,4 +30,8 @@ public class Bedroom extends Room {
     public void lightUp() {
         System.out.println("Lighting up the bedroom --child");
     }
+
+    public void sleep() {
+        System.out.println("Sleeping peacefully in the bedroom --child");
+    }
 }

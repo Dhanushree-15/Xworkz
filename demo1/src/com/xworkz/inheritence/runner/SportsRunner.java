@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.sports.Sports;
 import com.xworkz.inheritence.internal.sports.Football;
+import com.xworkz.inheritence.internal.sports.SportsUser;
 
 public class SportsRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class SportsRunner {
         football.competition();
         football.team();
         football.training();
+        football.worldCup();
+
+        System.out.println("-----------");
+
+        SportsUser user = new SportsUser();
+        user.use(sport);
+        user.use(sport2);
+        user.use(football);
     }
 }

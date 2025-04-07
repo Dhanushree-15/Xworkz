@@ -30,4 +30,8 @@ public class HairScissors extends Scissors {
     public void handle() {
         System.out.println("HairScissors need careful handling --child");
     }
+
+    public void adjustBlades() {
+        System.out.println("HairScissors blades can be adjusted for precision --child");
+    }
 }

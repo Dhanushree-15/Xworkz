@@ -25,4 +25,8 @@ public class SportsBike extends R15Bike {
     public void model() {
         System.out.println("SportsBike models include racing and touring types--child");
     }
+    public void raceMode() {
+        System.out.println("SportsBike is set to Race Mode --child");
+    }
+
 }

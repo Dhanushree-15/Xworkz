@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.stationery.Stationery;
 import com.xworkz.inheritence.internal.stationery.Pen;
+import com.xworkz.inheritence.internal.stationery.StationeryUser;
 
 public class StationeryRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class StationeryRunner {
         pen.color();
         pen.size();
         pen.price();
+        pen.refill();
+
+        System.out.println("-----------");
+
+        StationeryUser user = new StationeryUser();
+        user.use(stationery);
+        user.use(stationery2);
+        user.use(pen);
     }
 }

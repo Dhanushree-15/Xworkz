@@ -30,4 +30,8 @@ public class Football extends Sports {
     public void training() {
         System.out.println("Football requires fitness training --child");
     }
+
+    public void worldCup() {
+        System.out.println("Football World Cup is held every 4 years --child");
+    }
 }

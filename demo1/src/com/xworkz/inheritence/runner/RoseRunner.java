@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.rose.Rose;
 import com.xworkz.inheritence.internal.rose.RedRose;
+import com.xworkz.inheritence.internal.rose.RoseUser;
 
 public class RoseRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class RoseRunner {
         redRose.decorate();
         redRose.thorns();
         redRose.love();
+        redRose.romanticValue();
+
+        System.out.println("-----------");
+
+        RoseUser user = new RoseUser();
+        user.use(rose);
+        user.use(rose2);
+        user.use(redRose);
     }
 }

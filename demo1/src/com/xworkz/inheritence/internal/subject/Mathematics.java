@@ -30,4 +30,8 @@ public class Mathematics extends Subject {
     public void knowledge() {
         System.out.println("Mathematics enhances logical thinking --child");
     }
+
+    public void equations() {
+        System.out.println("Mathematics includes solving equations --child");
+    }
 }

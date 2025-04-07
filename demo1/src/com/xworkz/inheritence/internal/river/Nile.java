@@ -30,4 +30,8 @@ public class Nile extends River {
     public void wildlife() {
         System.out.println("Nile supports diverse wildlife --child");
     }
+
+    public void floodSeason() {
+        System.out.println("Nile causes annual floods during rainy season --child");
+    }
 }

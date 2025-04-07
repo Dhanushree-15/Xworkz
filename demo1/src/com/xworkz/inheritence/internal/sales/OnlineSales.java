@@ -30,4 +30,8 @@ public class OnlineSales extends Sales {
     public void global() {
         System.out.println("OnlineSales happen globally via e-commerce --child");
     }
+
+    public void trackDelivery() {
+        System.out.println("OnlineSales allow tracking of product delivery --child");
+    }
 }

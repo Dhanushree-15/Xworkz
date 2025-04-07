@@ -30,4 +30,9 @@ public class SpicyChips extends PotatoChips {
     public void snack() {
         System.out.println("Chips are a common snack--child");
     }
-}
+    public void spicyLevel() {
+
+            System.out.println("SpicyChips have a high spice level --child");
+        }
+
+    }

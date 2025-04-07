@@ -30,4 +30,8 @@ public class FlipFlop extends Slipper {
     public void relax() {
         System.out.println("FlipFlops are great for relaxing --child");
     }
+
+    public void beachWear() {
+        System.out.println("FlipFlops are perfect for beachwear --child");
+    }
 }

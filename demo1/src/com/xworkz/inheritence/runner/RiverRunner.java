@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.river.River;
 import com.xworkz.inheritence.internal.river.Nile;
+import com.xworkz.inheritence.internal.river.RiverUser;
 
 public class RiverRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class RiverRunner {
         nile.flows();
         nile.providesWater();
         nile.wildlife();
+        nile.floodSeason();
+
+        System.out.println("-----------");
+
+        RiverUser user = new RiverUser();
+        user.use(river);
+        user.use(river2);
+        user.use(nile);
     }
 }

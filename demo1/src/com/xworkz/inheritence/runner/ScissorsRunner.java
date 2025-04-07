@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.scissors.Scissors;
 import com.xworkz.inheritence.internal.scissors.HairScissors;
+import com.xworkz.inheritence.internal.scissors.ScissorsUser;
 
 public class ScissorsRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class ScissorsRunner {
         hairScissors.home();
         hairScissors.size();
         hairScissors.handle();
+        hairScissors.adjustBlades();
+
+        System.out.println("-----------");
+
+        ScissorsUser user = new ScissorsUser();
+        user.use(scissors);
+        user.use(scissors2);
+        user.use(hairScissors);
     }
 }

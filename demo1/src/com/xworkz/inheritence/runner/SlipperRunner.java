@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.slipper.Slipper;
 import com.xworkz.inheritence.internal.slipper.FlipFlop;
+import com.xworkz.inheritence.internal.slipper.SlipperUser;
 
 public class SlipperRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class SlipperRunner {
         flipFlop.grip();
         flipFlop.comfort();
         flipFlop.relax();
+        flipFlop.beachWear();
+
+        System.out.println("-----------");
+
+        SlipperUser user = new SlipperUser();
+        user.use(slipper);
+        user.use(slipper2);
+        user.use(flipFlop);
     }
 }

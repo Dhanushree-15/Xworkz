@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.spects.Spects;
 import com.xworkz.inheritence.internal.spects.Sunglasses;
+import com.xworkz.inheritence.internal.spects.SpectsUser;
 
 public class SpectsRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class SpectsRunner {
         sunglasses.frame();
         sunglasses.protect();
         sunglasses.customize();
+        sunglasses.polarizedView();
+
+        System.out.println("-----------");
+
+        SpectsUser user = new SpectsUser();
+        user.use(spects);
+        user.use(spects2);
+        user.use(sunglasses);
     }
 }

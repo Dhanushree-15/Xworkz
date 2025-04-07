@@ -30,4 +30,8 @@ public class Pen extends Stationery {
     public void price() {
         System.out.println("Pens range from cheap to expensive --child");
     }
+
+    public void refill() {
+        System.out.println("Pen refill can be replaced --child");
+    }
 }

@@ -30,4 +30,8 @@ public class LabradorPuppy extends Puppy {
     public void cuddle() {
         System.out.println("Labrador puppies love to cuddle a lot --child");
     }
+    public void fetch() {
+        System.out.println("LabradorPuppy loves to fetch balls --child");
+    }
+
 }

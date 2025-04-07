@@ -1,22 +1,42 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.potato.Potato;
-import com.xworkz.inheritence.internal.potato.SweetPotato;
-import com.xworkz.inheritence.internal.potato.PotatoUser;
+import com.xworkz.inheritence.internal.PotatoChips.PotatoChips;
+import com.xworkz.inheritence.internal.PotatoChips.SpicyChips;
+import com.xworkz.inheritence.internal.PotatoChips.ChipsUser;
 
 public class PotatoRunner {
     public static void main(String[] args) {
-        Potato potato = new Potato();
-        Potato potato2 = new SweetPotato();
-        SweetPotato sweetPotato = new SweetPotato();
+        PotatoChips chips = new PotatoChips();
+        chips.made();
+        chips.crispy();
+        chips.flavors();
+        chips.packed();
+        chips.snack();
 
         System.out.println("-----------");
 
-        PotatoUser user = new PotatoUser();
-        user.use(potato);
+        PotatoChips chips2 = new SpicyChips();
+        chips2.made();
+        chips2.crispy();
+        chips2.flavors();
+        chips2.packed();
+        chips2.snack();
+
         System.out.println("-----------");
-        user.use(potato2);
+
+        SpicyChips spicyChips = new SpicyChips();
+        spicyChips.made();
+        spicyChips.crispy();
+        spicyChips.flavors();
+        spicyChips.packed();
+        spicyChips.snack();
+        spicyChips.spicyLevel();
+
         System.out.println("-----------");
-        user.use(sweetPotato);
+
+        ChipsUser user = new ChipsUser();
+        user.use(chips);
+        user.use(chips2);
+        user.use(spicyChips);
     }
 }

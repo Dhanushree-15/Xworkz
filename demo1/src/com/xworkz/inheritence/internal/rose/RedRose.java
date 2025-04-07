@@ -30,4 +30,8 @@ public class RedRose extends Rose {
     public void love() {
         System.out.println("RedRose is a symbol of deep love --child");
     }
+
+    public void romanticValue() {
+        System.out.println("RedRose is often used to express romantic feelings --child");
+    }
 }
