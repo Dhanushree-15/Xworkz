@@ -30,4 +30,8 @@ public class SpicyPanipuri extends Panipuri {
     public void fresh() {
         System.out.println("SpicyPanipuri tastes best when freshly served --child");
     }
+    public void serve() {
+        System.out.println("SpicyPanipuri is served with chilled spicy water --child");
+    }
+
 }

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.mug.Mug;
 import com.xworkz.inheritence.internal.mug.CoffeeMug;
+import com.xworkz.inheritence.internal.mug.MugUser;
 
 public class MugRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class MugRunner {
         coffeeMug.handle();
         coffeeMug.design();
         coffeeMug.hot();
+
+        System.out.println("------casting------");
+        MugUser mugUser = new MugUser();
+        mugUser.use(mug);
+        mugUser.use(mug2);
+        mugUser.use(coffeeMug);
     }
 }

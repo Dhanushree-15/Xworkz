@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.phone.Phone;
 import com.xworkz.inheritence.internal.phone.Smartphone;
+import com.xworkz.inheritence.internal.phone.PhoneUser;
 
 public class PhoneRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PhoneRunner {
         smartphone.camera();
         smartphone.battery();
         smartphone.internet();
+        smartphone.appStore();
+
+        System.out.println("-----------");
+
+        PhoneUser user = new PhoneUser();
+        user.use(phone);
+        user.use(phone2);
+        user.use(smartphone);
     }
 }

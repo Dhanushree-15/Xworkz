@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.money.Currency;
 import com.xworkz.inheritence.internal.money.Dollar;
+import com.xworkz.inheritence.internal.money.ForexTrader;
 
 public class MoneyRunner {
     public static void main(String[] args) {
@@ -26,5 +27,11 @@ public class MoneyRunner {
         dollar.rate();
         dollar.symbol();
         dollar.usage();
+
+        System.out.println("------casting------");
+        ForexTrader trader = new ForexTrader();
+        trader.use(currency1);
+        trader.use(currency);
+        trader.use(dollar);
     }
 }

@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.lipstick.Lipstick;
+import com.xworkz.inheritence.internal.lipstick.LakmeLipstick;
 import com.xworkz.inheritence.internal.lipstick.MatteLipstick;
 
 public class LipstickRunner {
@@ -29,5 +30,11 @@ public class LipstickRunner {
         matteLipstick.texture();
         matteLipstick.beauty();
         matteLipstick.makeup();
+
+        System.out.println("------casting------");
+        LakmeLipstick lakme = new LakmeLipstick();
+        lakme.use(lipstick);
+        lakme.use(lipstick2);
+        lakme.use(matteLipstick);
     }
 }

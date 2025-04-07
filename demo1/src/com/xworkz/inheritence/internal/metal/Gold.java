@@ -30,4 +30,8 @@ public class Gold extends Metal {
     public void resist() {
         System.out.println("Gold resists rust and corrosion --child");
     }
+    public void shine() {
+        System.out.println("Gold shines brightly and adds value --child");
+    }
+
 }

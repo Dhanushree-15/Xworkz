@@ -30,4 +30,8 @@ public class NetflixSeries extends Netflix {
     public void offline() {
         System.out.println("NetflixSeries supports offline downloads --child");
     }
+    public void recommendations() {
+        System.out.println("NetflixSeries gives personalized recommendations --child");
+    }
+
 }

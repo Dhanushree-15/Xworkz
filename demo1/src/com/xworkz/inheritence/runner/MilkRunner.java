@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.milk.Milk;
 import com.xworkz.inheritence.internal.milk.AlmondMilk;
+import com.xworkz.inheritence.internal.milk.DairyShop;
 
 public class MilkRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class MilkRunner {
         almondMilk.immunity();
         almondMilk.daily();
         almondMilk.types();
+
+        System.out.println("------casting------");
+        DairyShop shop = new DairyShop();
+        shop.use(milk);
+        shop.use(milk2);
+        shop.use(almondMilk);
     }
 }

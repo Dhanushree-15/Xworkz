@@ -1,7 +1,10 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.laptop.DellLaptop;
 import com.xworkz.inheritence.internal.laptop.Laptop;
 import com.xworkz.inheritence.internal.laptop.GamingLaptop;
+
+import java.sql.SQLOutput;
 
 public class LaptopRunner {
     public static void main(String[] args) {
@@ -29,5 +32,12 @@ public class LaptopRunner {
         gamingLaptop.connectToInternet();
         gamingLaptop.supportMultitasking();
         gamingLaptop.longBatteryLife();
+
+        System.out.println("------casting------");
+        DellLaptop dellLaptop=new DellLaptop();
+        dellLaptop.work(laptop);
+        dellLaptop.work(laptop2);
+        dellLaptop.work(gamingLaptop);
     }
+
 }

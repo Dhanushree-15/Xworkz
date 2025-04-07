@@ -30,4 +30,9 @@ public class Pacific extends Ocean {
     public void tides() {
         System.out.println("Pacific has strong tidal patterns --child");
     }
+    public void discover() {
+        System.out.println("Pacific Ocean was discovered by explorers centuries ago --child");
+    }
+
+
 }

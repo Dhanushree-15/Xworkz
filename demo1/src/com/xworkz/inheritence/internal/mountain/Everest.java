@@ -30,4 +30,8 @@ public class Everest extends Mountain {
     public void wildlife() {
         System.out.println("Everest has unique wildlife like snow leopards --child");
     }
+    public void snowZone() {
+        System.out.println("Everest has a permanent snow zone --child");
+    }
+
 }

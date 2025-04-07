@@ -25,4 +25,8 @@ public class Dollar extends Currency {
     public void usage() {
         System.out.println("Dollar is used globally--child");
     }
+    public void globalReserve() {
+        System.out.println("Dollar is the most widely held reserve currency --child");
+    }
+
 }

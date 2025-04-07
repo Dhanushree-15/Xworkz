@@ -30,4 +30,8 @@ public class BirthdayParty extends Party {
     public void decorate() {
         System.out.println("BirthdayParty is decorated with balloons and lights --child");
     }
+    public void games() {
+        System.out.println("BirthdayParty includes fun games for kids --child");
+    }
+
 }

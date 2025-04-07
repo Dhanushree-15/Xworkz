@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.lock.Key;
 import com.xworkz.inheritence.internal.lock.Lock;
+import com.xworkz.inheritence.internal.lock.GodrejLock;
 
 public class KeyRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class KeyRunner {
         lock.open();
         lock.white();
         lock.small();
+
+        System.out.println("------casting------");
+        GodrejLock godrej = new GodrejLock();
+        godrej.use(key);
+        godrej.use(key2);
+        godrej.use(lock);
     }
 }

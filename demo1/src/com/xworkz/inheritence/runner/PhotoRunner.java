@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.photo.Photo;
 import com.xworkz.inheritence.internal.photo.DigitalPhoto;
+import com.xworkz.inheritence.internal.photo.PhotoUser;
 
 public class PhotoRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PhotoRunner {
         digitalPhoto.print();
         digitalPhoto.format();
         digitalPhoto.share();
+        digitalPhoto.applyFilter();
+
+        System.out.println("-----------");
+
+        PhotoUser user = new PhotoUser();
+        user.use(photo);
+        user.use(photo2);
+        user.use(digitalPhoto);
     }
 }

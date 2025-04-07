@@ -30,4 +30,7 @@ public class WildPig extends Pig {
     public void smart() {
         System.out.println("WildPig adapts to environments quickly --child");
     }
+    public void defend() {
+        System.out.println("WildPig defends itself using tusks and speed --child");
+    }
 }

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.pig.Pig;
 import com.xworkz.inheritence.internal.pig.WildPig;
+import com.xworkz.inheritence.internal.pig.PigUser;
 
 public class PigRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PigRunner {
         wildPig.smell();
         wildPig.social();
         wildPig.smart();
+        wildPig.defend();
+
+        System.out.println("-----------");
+
+        PigUser user = new PigUser();
+        user.use(pig);
+        user.use(pig2);
+        user.use(wildPig);
     }
 }

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.ocean.Ocean;
 import com.xworkz.inheritence.internal.ocean.Pacific;
+import com.xworkz.inheritence.internal.ocean.OceanUser;
 
 public class OceanRunner {
     public static void main(String[] args) {
@@ -29,5 +30,12 @@ public class OceanRunner {
         pacific.waves();
         pacific.temperature();
         pacific.tides();
+        pacific.discover();
+
+        System.out.println("------casting------");
+        OceanUser user = new OceanUser();
+        user.explore(ocean);
+        user.explore(ocean2);
+        user.explore(pacific);
     }
 }

@@ -30,4 +30,7 @@ public class Smartphone extends Phone {
     public void internet() {
         System.out.println("Smartphone has 5G connectivity --child");
     }
+    public void appStore() {
+        System.out.println("Smartphone allows access to Play Store and App Store --child");
+    }
 }

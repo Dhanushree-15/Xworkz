@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.pizza.Pizza;
 import com.xworkz.inheritence.internal.pizza.CheesePizza;
+import com.xworkz.inheritence.internal.pizza.PizzaUser;
 
 public class PizzaRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PizzaRunner {
         cheesePizza.cheese();
         cheesePizza.flavors();
         cheesePizza.cook();
+        cheesePizza.addToppings();
+
+        System.out.println("-----------");
+
+        PizzaUser user = new PizzaUser();
+        user.use(pizza);
+        user.use(pizza2);
+        user.use(cheesePizza);
     }
 }

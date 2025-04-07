@@ -2,32 +2,21 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.potato.Potato;
 import com.xworkz.inheritence.internal.potato.SweetPotato;
+import com.xworkz.inheritence.internal.potato.PotatoUser;
 
 public class PotatoRunner {
     public static void main(String[] args) {
         Potato potato = new Potato();
-        potato.grow();
-        potato.cook();
-        potato.carbs();
-        potato.types();
-        potato.staple();
-
-        System.out.println("-----------");
-
         Potato potato2 = new SweetPotato();
-        potato2.grow();
-        potato2.cook();
-        potato2.carbs();
-        potato2.types();
-        potato2.staple();
+        SweetPotato sweetPotato = new SweetPotato();
 
         System.out.println("-----------");
 
-        SweetPotato sweetPotato = new SweetPotato();
-        sweetPotato.grow();
-        sweetPotato.cook();
-        sweetPotato.carbs();
-        sweetPotato.types();
-        sweetPotato.staple();
+        PotatoUser user = new PotatoUser();
+        user.use(potato);
+        System.out.println("-----------");
+        user.use(potato2);
+        System.out.println("-----------");
+        user.use(sweetPotato);
     }
 }

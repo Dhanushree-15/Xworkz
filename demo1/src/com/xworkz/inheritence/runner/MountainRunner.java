@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.mountain.Mountain;
 import com.xworkz.inheritence.internal.mountain.Everest;
+import com.xworkz.inheritence.internal.mountain.Climber;
 
 public class MountainRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class MountainRunner {
         everest.location();
         everest.trekking();
         everest.wildlife();
+
+        System.out.println("------casting------");
+        Climber climber = new Climber();
+        climber.climb(mountain);
+        climber.climb(mountain2);
+        climber.climb(everest);
     }
 }

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.news.News;
 import com.xworkz.inheritence.internal.news.BreakingNews;
+import com.xworkz.inheritence.internal.news.NewsUser;
 
 public class NewsRunner {
     public static void main(String[] args) {
@@ -29,5 +30,12 @@ public class NewsRunner {
         breakingNews.publish();
         breakingNews.politics();
         breakingNews.sports();
+        breakingNews.alert();
+
+        System.out.println("------casting------");
+        NewsUser user = new NewsUser();
+        user.follow(news);
+        user.follow(news2);
+        user.follow(breakingNews);
     }
 }

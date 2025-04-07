@@ -25,4 +25,7 @@ public class Pista extends Mango {
     public void usedInCooking() {
         System.out.println("Mango is used in making pies and juices--child");
     }
+    public void specialOffer() {
+        System.out.println("Pista mango comes with a summer discount! --child");
+    }
 }

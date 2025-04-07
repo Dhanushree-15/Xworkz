@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.men.Men;
 import com.xworkz.inheritence.internal.men.Gentleman;
+import com.xworkz.inheritence.internal.men.SuitTailor;
 
 public class MenRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class MenRunner {
         gentleman.dress();
         gentleman.fit();
         gentleman.social();
+
+        System.out.println("------casting------");
+        SuitTailor tailor = new SuitTailor();
+        tailor.use(men);
+        tailor.use(men2);
+        tailor.use(gentleman);
     }
 }

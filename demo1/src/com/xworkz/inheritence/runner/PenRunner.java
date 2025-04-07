@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.pen.Pen;
 import com.xworkz.inheritence.internal.pen.BallPen;
+import com.xworkz.inheritence.internal.pen.PenUser;
 
 public class PenRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PenRunner {
         ballPen.cap();
         ballPen.refill();
         ballPen.grip();
+        ballPen.color(); // calling custom method directly
+
+        System.out.println("------casting------");
+
+        PenUser user = new PenUser();
+        user.use(pen);
+        user.use(pen2);
+        user.use(ballPen);
     }
 }

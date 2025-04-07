@@ -30,4 +30,7 @@ public class Gentleman extends Men {
     public void social() {
         System.out.println("Gentleman socializes politely --child");
     }
+    public void etiquette() {
+        System.out.println("Gentleman follows proper etiquette --child");
+    }
 }

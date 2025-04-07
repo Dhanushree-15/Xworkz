@@ -30,4 +30,11 @@ public class MatteLipstick extends Lipstick {
     public void makeup() {
         System.out.println("MatteLipstick is a must-have for makeup --child");
     }
+
+
+    public void matteFinish() {
+        System.out.println("MatteLipstick gives a perfect matte finish --child");
+    }
+
 }
+

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.metal.Metal;
 import com.xworkz.inheritence.internal.metal.Gold;
+import com.xworkz.inheritence.internal.metal.Jeweller;
 
 public class MetalRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class MetalRunner {
         gold.malleable();
         gold.dense();
         gold.resist();
+
+        System.out.println("------casting------");
+        Jeweller jeweller = new Jeweller();
+        jeweller.use(metal);
+        jeweller.use(metal2);
+        jeweller.use(gold);
     }
 }

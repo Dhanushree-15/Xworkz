@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.pant.Pant;
 import com.xworkz.inheritence.internal.pant.JeansPant;
+import com.xworkz.inheritence.internal.pant.PantUser;
 
 public class PantRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PantRunner {
         jeansPant.style();
         jeansPant.comfort();
         jeansPant.size();
+        jeansPant.washCare();
+
+        System.out.println("------casting------");
+
+        PantUser user = new PantUser();
+        user.tryPant(pant);
+        user.tryPant(pant2);
+        user.tryPant(jeansPant);
     }
 }

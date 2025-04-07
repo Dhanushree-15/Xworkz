@@ -30,4 +30,7 @@ public class JeansPant extends Pant {
     public void size() {
         System.out.println("JeansPant is available in multiple sizes --child");
     }
+    public void washCare() {
+        System.out.println("JeansPant should be washed inside out --child");
+    }
 }

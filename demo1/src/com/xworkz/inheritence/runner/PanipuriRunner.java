@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.panipuri.Panipuri;
 import com.xworkz.inheritence.internal.panipuri.SpicyPanipuri;
+import com.xworkz.inheritence.internal.panipuri.PanipuriUser;
 
 public class PanipuriRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PanipuriRunner {
         spicyPanipuri.variety();
         spicyPanipuri.filling();
         spicyPanipuri.fresh();
+        spicyPanipuri.serve();
+
+        System.out.println("------casting------");
+
+        PanipuriUser user = new PanipuriUser();
+        user.enjoy(panipuri);
+        user.enjoy(panipuri2);
+        user.enjoy(spicyPanipuri);
     }
 }

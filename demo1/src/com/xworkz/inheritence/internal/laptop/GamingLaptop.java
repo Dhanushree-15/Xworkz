@@ -30,4 +30,8 @@ public class GamingLaptop extends Laptop {
     public void longBatteryLife() {
         System.out.println("GamingLaptop consumes more power --child");
     }
+
+    public void wifi() {
+        System.out.println("new method wifi in child class");
+    }
 }

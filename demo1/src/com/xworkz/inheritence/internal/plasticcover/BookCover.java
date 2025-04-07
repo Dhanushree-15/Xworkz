@@ -30,4 +30,8 @@ public class BookCover extends PlasticCover {
     public void enhance() {
         System.out.println("Book covers enhance book's look--child");
     }
+
+    public void reusable() {
+        System.out.println("Book covers are reusable and eco-friendly--child");
+    }
 }

@@ -30,4 +30,7 @@ public class DigitalPhoto extends Photo {
     public void share() {
         System.out.println("DigitalPhoto is shared instantly online --child");
     }
+    public void applyFilter() {
+        System.out.println("DigitalPhoto supports applying artistic filters --child");
+    }
 }

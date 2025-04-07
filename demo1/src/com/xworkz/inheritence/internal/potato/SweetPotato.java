@@ -30,4 +30,9 @@ public class SweetPotato extends Potato {
     public void staple() {
         System.out.println("Sweet potatoes are a healthy staple food --child");
     }
+    public void vitaminA() {
+        System.out.println("Sweet potatoes are rich in Vitamin A --child");
+    }
+
 }
+

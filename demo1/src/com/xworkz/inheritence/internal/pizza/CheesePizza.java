@@ -30,4 +30,7 @@ public class CheesePizza extends Pizza {
     public void cook() {
         System.out.println("CheesePizza is baked at high temperature --child");
     }
+    public void addToppings() {
+        System.out.println("CheesePizza includes olives, jalapenos, and chili flakes --child");
+    }
 }

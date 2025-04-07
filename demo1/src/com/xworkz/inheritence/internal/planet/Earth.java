@@ -30,4 +30,8 @@ public class Earth extends Planet {
     public void ocean() {
         System.out.println("Earth's surface is 71% ocean --child");
     }
+
+    public void supportTechnology() {
+        System.out.println("Earth supports advanced technology and human civilization --child");
+    }
 }

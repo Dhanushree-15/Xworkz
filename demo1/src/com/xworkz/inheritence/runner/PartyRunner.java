@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.party.Party;
 import com.xworkz.inheritence.internal.party.BirthdayParty;
+import com.xworkz.inheritence.internal.party.PartyOrganizer;
 
 public class PartyRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class PartyRunner {
         birthdayParty.music();
         birthdayParty.dance();
         birthdayParty.decorate();
+        birthdayParty.games();
+
+        System.out.println("------casting------");
+
+        PartyOrganizer organizer = new PartyOrganizer();
+        organizer.manage(party);
+        organizer.manage(party2);
+        organizer.manage(birthdayParty);
     }
 }

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.netflix.Netflix;
 import com.xworkz.inheritence.internal.netflix.NetflixSeries;
+import com.xworkz.inheritence.internal.netflix.NetflixUser;
 
 public class NetflixRunner {
     public static void main(String[] args) {
@@ -29,5 +30,12 @@ public class NetflixRunner {
         netflixSeries.devices();
         netflixSeries.content();
         netflixSeries.offline();
+        netflixSeries.recommendations();
+
+        System.out.println("------casting------");
+        NetflixUser user = new NetflixUser();
+        user.watch(netflix);
+        user.watch(netflix2);
+        user.watch(netflixSeries);
     }
 }

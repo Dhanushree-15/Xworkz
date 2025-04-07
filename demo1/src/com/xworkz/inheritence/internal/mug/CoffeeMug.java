@@ -30,4 +30,9 @@ public class CoffeeMug extends Mug {
     public void hot() {
         System.out.println("CoffeeMug retains heat well --child");
     }
+    public void capacity() {
+        System.out.println("CoffeeMug has a capacity of 350ml --child");
+    }
+
+
 }

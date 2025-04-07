@@ -30,4 +30,8 @@ public class AlmondMilk extends Milk {
     public void types() {
         System.out.println("Almond milk comes in various flavors --child");
     }
+    public void veganFriendly() {
+        System.out.println("Almond milk is suitable for vegan diets --child");
+    }
+
 }

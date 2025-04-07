@@ -30,4 +30,7 @@ public class Lock extends Key {
     public void small() {
         System.out.println("Lock is small --child");
     }
+    public void secure() {
+        System.out.println("Lock provides extra security --child");
+    }
 }

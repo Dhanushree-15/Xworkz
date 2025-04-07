@@ -30,4 +30,8 @@ public class BallPen extends Pen {
     public void grip() {
         System.out.println("BallPen has a rubber grip for comfort --child");
     }
+    public void color() {
+        System.out.println("BallPen is available in blue and black ink --child");
+    }
+
 }

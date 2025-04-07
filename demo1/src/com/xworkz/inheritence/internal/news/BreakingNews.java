@@ -30,4 +30,9 @@ public class BreakingNews extends News {
     public void sports() {
         System.out.println("BreakingNews highlights live sports scores --child");
     }
+
+    public void alert() {
+        System.out.println("BreakingNews sends emergency alerts --child");
+    }
+
 }
