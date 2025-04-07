@@ -1,4 +1,4 @@
-package com.xworkz.inheritence.internal.cur;
+package com.xworkz.inheritence.internal.money;
 
 public class Dollar extends Currency {
     public Dollar() {

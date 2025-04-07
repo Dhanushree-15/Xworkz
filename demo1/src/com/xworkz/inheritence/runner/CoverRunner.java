@@ -1,11 +1,11 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.cover.Cover;
-import com.xworkz.inheritence.internal.cover.BookCover;
+import com.xworkz.inheritence.internal.plasticcover.PlasticCover;
+import com.xworkz.inheritence.internal.plasticcover.BookCover;
 
 public class CoverRunner {
     public static void main(String[] args) {
-        Cover cover1 = new Cover();
+        PlasticCover cover1 = new PlasticCover();
         cover1.protect();
         cover1.design();
         cover1.grip();
@@ -14,7 +14,7 @@ public class CoverRunner {
 
         System.out.println("-----------");
 
-        Cover cover = new BookCover();
+        PlasticCover cover = new BookCover();
         cover.protect();
         cover.design();
         cover.grip();

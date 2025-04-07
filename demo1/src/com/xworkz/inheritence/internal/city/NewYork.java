@@ -1,6 +1,6 @@
 package com.xworkz.inheritence.internal.city;
 
-public class NewYork extends City {
+public class NewYork extends Shimogga {
     public NewYork() {
         super();
         System.out.println("Running non-arg constructor NewYork--child");

@@ -1,6 +1,6 @@
-package com.xworkz.inheritence.internal.chips;
+package com.xworkz.inheritence.internal.PotatoChips;
 
-public class SpicyChips extends Chips {
+public class SpicyChips extends PotatoChips {
     public SpicyChips() {
         super();
         System.out.println("Running non-arg constructor SpicyChips--child");

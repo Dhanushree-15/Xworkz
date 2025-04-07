@@ -1,11 +1,11 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.church.Church;
+import com.xworkz.inheritence.internal.church.CityChurch;
 import com.xworkz.inheritence.internal.church.CatholicChurch;
 
 public class ChurchRunner {
     public static void main(String[] args) {
-        Church church1 = new Church();
+        CityChurch church1 = new CityChurch();
         church1.service();
         church1.pray();
         church1.candles();
@@ -13,7 +13,7 @@ public class ChurchRunner {
         church1.bible();
 
         System.out.println("-----------------");
-        Church church = new CatholicChurch();
+        CityChurch church = new CatholicChurch();
         church.service();
         church.pray();
         church.candles();

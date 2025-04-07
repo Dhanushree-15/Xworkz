@@ -1,7 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.color.Color;
-import com.xworkz.inheritence.internal.color.Red;
+import com.xworkz.inheritence.internal.color.Purple;
 
 public class ColorRunner {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class ColorRunner {
 
         System.out.println("-----------");
 
-        Color color = new Red();
+        Color color = new Purple();
         color.display();
         color.mix();
         color.brighten();
@@ -21,7 +21,7 @@ public class ColorRunner {
 
         System.out.println("-----------");
 
-        Red red = new Red();
+        Purple red = new Purple();
         red.display();
         red.mix();
         red.brighten();

@@ -1,9 +1,9 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.cur.Currency;
-import com.xworkz.inheritence.internal.cur.Dollar;
+import com.xworkz.inheritence.internal.money.Currency;
+import com.xworkz.inheritence.internal.money.Dollar;
 
-public class CurrRunner {
+public class MoneyRunner {
     public static void main(String[] args) {
         Currency currency1 = new Currency();
         currency1.value();

@@ -1,6 +1,6 @@
 package com.xworkz.inheritence.internal.chikan;
 
-public class ChikanEmbroidery extends Chikan {
+public class ChikanEmbroidery extends ChilliChikan {
     public ChikanEmbroidery() {
         super();
         System.out.println("Running non-arg constructor ChikanEmbroidery--child");

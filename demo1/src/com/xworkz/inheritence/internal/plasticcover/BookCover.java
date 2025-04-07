@@ -1,6 +1,6 @@
-package com.xworkz.inheritence.internal.cover;
+package com.xworkz.inheritence.internal.plasticcover;
 
-public class BookCover extends Cover {
+public class BookCover extends PlasticCover {
     public BookCover() {
         super();
         System.out.println("Running non-arg constructor BookCover--child");

@@ -1,11 +1,11 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.city.City;
+import com.xworkz.inheritence.internal.city.Shimogga;
 import com.xworkz.inheritence.internal.city.NewYork;
 
 public class CityRunner {
     public static void main(String[] args) {
-        City city1 = new City();
+        Shimogga city1 = new Shimogga();
         city1.people();
         city1.roads();
         city1.visit();
@@ -14,7 +14,7 @@ public class CityRunner {
 
         System.out.println("-----------");
 
-        City city = new NewYork();
+        Shimogga city = new NewYork();
         city.people();
         city.roads();
         city.visit();

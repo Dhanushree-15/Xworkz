@@ -1,11 +1,11 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.chikan.Chikan;
+import com.xworkz.inheritence.internal.chikan.ChilliChikan;
 import com.xworkz.inheritence.internal.chikan.ChikanEmbroidery;
 
 public class ChikanRunner {
     public static void main(String[] args) {
-        Chikan chikan1 = new Chikan();
+        ChilliChikan chikan1 = new ChilliChikan();
         chikan1.art();
         chikan1.handMade();
         chikan1.origin();
@@ -13,7 +13,7 @@ public class ChikanRunner {
         chikan1.fabric();
 
         System.out.println("-------------------");
-        Chikan chikan = new ChikanEmbroidery();
+        ChilliChikan chikan = new ChikanEmbroidery();
         chikan.art();
         chikan.handMade();
         chikan.origin();

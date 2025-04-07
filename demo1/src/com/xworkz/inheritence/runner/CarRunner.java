@@ -1,11 +1,11 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.car.Car;
+import com.xworkz.inheritence.internal.car.BmwCar;
 import com.xworkz.inheritence.internal.car.ElectricCar;
 
 public class CarRunner {
     public static void main(String[] args) {
-        Car car1 = new Car();
+        BmwCar car1 = new BmwCar();
         car1.transport();
         car1.wheels();
         car1.engine();
@@ -13,7 +13,7 @@ public class CarRunner {
         car1.comfort();
 
         System.out.println("-------------------");
-        Car car2 = new ElectricCar();
+        BmwCar car2 = new ElectricCar();
         car2.transport();
         car2.wheels();
         car2.engine();

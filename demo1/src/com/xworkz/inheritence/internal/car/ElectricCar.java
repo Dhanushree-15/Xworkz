@@ -1,6 +1,6 @@
 package com.xworkz.inheritence.internal.car;
 
-public class ElectricCar extends Car {
+public class ElectricCar extends BmwCar {
     public ElectricCar() {
         super();
         System.out.println("Running non-arg constructor ElectricCar--child");
