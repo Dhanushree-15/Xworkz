@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.suit.Suit;
 import com.xworkz.inheritence.internal.suit.WeddingSuit;
+import com.xworkz.inheritence.internal.suit.SuitUser;
 
 public class SuitRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class SuitRunner {
         weddingSuit.style();
         weddingSuit.personality();
         weddingSuit.fitting();
+        weddingSuit.dryClean(); // ✅ calling new child method directly
+
+        System.out.println("-----------");
+
+        SuitUser user = new SuitUser();
+        user.useSuit(suit2); // ✅ testing casting and calling child method through parent reference
     }
 }

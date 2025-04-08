@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.sugar.Sugar;
 import com.xworkz.inheritence.internal.sugar.BrownSugar;
+import com.xworkz.inheritence.internal.sugar.SugarUser;
 
 public class SugarRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class SugarRunner {
         brownSugar.store();
         brownSugar.addToDesserts();
         brownSugar.usedInBaking();
+        brownSugar.caramelize(); // ✅ direct child method call
+
+        System.out.println("-----------");
+
+        SugarUser user = new SugarUser();
+        user.useSugar(sugar2); // ✅ testing casting using user class
     }
 }

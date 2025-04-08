@@ -30,4 +30,9 @@ public class WeddingSuit extends Suit {
     public void fitting() {
         System.out.println("WeddingSuit must have a perfect fit --child");
     }
+
+    public void dryClean() {
+        System.out.println("WeddingSuit should be dry-cleaned --child method");
+    }
+
 }

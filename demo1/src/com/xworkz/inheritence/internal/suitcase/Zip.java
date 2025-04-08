@@ -30,4 +30,8 @@ public class Zip extends Suitcase {
     public void lock() {
         System.out.println("Zip Suitcase has a zip-lock mechanism --child");
     }
+    public void smoothZip() {
+        System.out.println("Zip glides smoothly without snags --child method");
+    }
+
 }

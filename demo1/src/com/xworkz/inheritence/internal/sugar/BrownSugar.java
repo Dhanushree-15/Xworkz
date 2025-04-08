@@ -30,4 +30,8 @@ public class BrownSugar extends Sugar {
     public void usedInBaking() {
         System.out.println("BrownSugar is often used in baking cookies --child");
     }
+
+    public void caramelize() {
+        System.out.println("BrownSugar caramelizes beautifully when heated --child");
+    }
 }
