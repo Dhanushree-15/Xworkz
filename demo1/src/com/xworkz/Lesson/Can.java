@@ -15,4 +15,8 @@ public class Can {
     public String toString() {
         return "Can [capacity=" + capacity + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 86;
+    }
 }

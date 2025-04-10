@@ -15,4 +15,8 @@ public class Remote {
     public String toString() {
         return "Remote [buttons=" + buttons + ", brand=" + brand + ", range=" + range + "]";
     }
+    @Override
+    public int hashCode(){
+        return 37;
+    }
 }

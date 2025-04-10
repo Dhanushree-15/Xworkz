@@ -15,4 +15,8 @@ public class Compass {
     public String toString() {
         return "Compass [needleLength=" + needleLength + ", directionType=" + directionType + ", radius=" + radius + "]";
     }
+    @Override
+    public int hashCode(){
+        return 76;
+    }
 }

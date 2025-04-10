@@ -15,4 +15,8 @@ public class Tent {
     public String toString() {
         return "Tent [capacity=" + capacity + ", color=" + color + ", weight=" + weight + "]";
     }
+    @Override
+    public int hashCode(){
+        return 19;
+    }
 }

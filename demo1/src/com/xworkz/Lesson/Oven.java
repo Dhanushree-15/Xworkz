@@ -15,4 +15,8 @@ public class Oven {
     public String toString() {
         return "Oven [capacity=" + capacity + ", brand=" + brand + ", power=" + power + "]";
     }
+    @Override
+    public int hashCode(){
+        return 43;
+    }
 }

@@ -15,4 +15,9 @@ public class Belt {
     public String toString() {
         return "Belt [beltId=" + beltId + ", material=" + material + ", length=" + length + "]";
     }
+    @Override
+    public int hashCode(){
+        return 97;
+    }
+
 }

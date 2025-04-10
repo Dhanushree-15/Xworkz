@@ -15,4 +15,8 @@ public class Airplane {
     public String toString() {
         return "Airplane [numberOfEngines=" + numberOfEngines + ", model=" + model + ", maxSpeed=" + maxSpeed + "]";
     }
+    @Override
+    public int hashCode(){
+        return 99;
+    }
 }

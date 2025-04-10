@@ -15,4 +15,8 @@ public class Comb {
     public String toString() {
         return "Comb [teethCount=" + teethCount + ", material=" + material + ", length=" + length + "]";
     }
+    @Override
+    public int hashCode(){
+        return 77;
+    }
 }

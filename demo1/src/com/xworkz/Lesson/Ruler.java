@@ -15,4 +15,8 @@ public class Ruler {
     public String toString() {
         return "Ruler [length=" + length + ", material=" + material + ", width=" + width + "]";
     }
+    @Override
+    public int hashCode(){
+        return 35;
+    }
 }

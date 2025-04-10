@@ -15,4 +15,8 @@ public class Fork {
     public String toString() {
         return "Fork [prongCount=" + prongCount + ", material=" + material + ", length=" + length + "]";
     }
+    @Override
+    public int hashCode(){
+        return 72;
+    }
 }

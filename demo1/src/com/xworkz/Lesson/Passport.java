@@ -15,4 +15,8 @@ public class Passport {
     public String toString() {
         return "Passport [passportNumber=" + passportNumber + ", holderName=" + holderName + ", validityYears=" + validityYears + "]";
     }
+    @Override
+    public int hashCode(){
+        return 41;
+    }
 }

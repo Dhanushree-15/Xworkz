@@ -15,4 +15,8 @@ public class Matchbox {
     public String toString() {
         return "Matchbox [stickCount=" + stickCount + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 50;
+    }
 }

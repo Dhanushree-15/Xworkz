@@ -15,4 +15,8 @@ public class Window {
     public String toString() {
         return "Window [height=" + height + ", material=" + material + ", width=" + width + "]";
     }
+    @Override
+    public int hashCode(){
+        return 10;
+    }
 }

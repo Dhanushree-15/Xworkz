@@ -15,4 +15,8 @@ public class Lock {
     public String toString() {
         return "Lock [securityLevel=" + securityLevel + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 53;
+    }
 }

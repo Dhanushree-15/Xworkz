@@ -15,4 +15,8 @@ public class Truck {
     public String toString() {
         return "Truck [loadCapacity=" + loadCapacity + ", modelName=" + modelName + ", mileage=" + mileage + "]";
     }
+    @Override
+    public int hashCode(){
+        return 13;
+    }
 }

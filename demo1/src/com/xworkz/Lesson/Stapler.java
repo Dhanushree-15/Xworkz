@@ -15,4 +15,8 @@ public class Stapler {
     public String toString() {
         return "Stapler [stapleCapacity=" + stapleCapacity + ", color=" + color + ", weightInGrams=" + weightInGrams + "]";
     }
+    @Override
+    public int hashCode(){
+        return 22;
+    }
 }

@@ -15,4 +15,8 @@ public class Pen {
     public String toString() {
         return "Pen [inkLevel=" + inkLevel + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 41;
+    }
 }

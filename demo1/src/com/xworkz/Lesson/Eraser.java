@@ -15,4 +15,8 @@ public class Eraser {
     public String toString() {
         return "Eraser [lengthInCm=" + lengthInCm + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 74;
+    }
 }

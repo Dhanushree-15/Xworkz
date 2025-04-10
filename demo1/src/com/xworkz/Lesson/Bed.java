@@ -15,4 +15,9 @@ public class Bed {
     public String toString() {
         return "Bed [bedId=" + bedId + ", bedType=" + bedType + ", length=" + length + "]";
     }
+    @Override
+    public int hashCode(){
+        return 97;
+    }
+
 }

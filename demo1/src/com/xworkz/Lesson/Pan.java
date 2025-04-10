@@ -15,4 +15,8 @@ public class Pan {
     public String toString() {
         return "Pan [diameter=" + diameter + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 42;
+    }
 }

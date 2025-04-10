@@ -15,4 +15,8 @@ public class Rope {
     public String toString() {
         return "Rope [length=" + length + ", material=" + material + ", thickness=" + thickness + "]";
     }
+    @Override
+    public int hashCode(){
+        return 36;
+    }
 }

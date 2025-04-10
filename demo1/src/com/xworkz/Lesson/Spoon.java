@@ -15,4 +15,8 @@ public class Spoon {
     public String toString() {
         return "Spoon [lengthInCm=" + lengthInCm + ", material=" + material + ", weightInGrams=" + weightInGrams + "]";
     }
+    @Override
+    public int hashCode(){
+        return 23;
+    }
 }

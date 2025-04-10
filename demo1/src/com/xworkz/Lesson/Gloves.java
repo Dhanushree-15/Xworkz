@@ -15,4 +15,8 @@ public class Gloves {
     public String toString() {
         return "Gloves [size=" + size + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 68;
+    }
 }

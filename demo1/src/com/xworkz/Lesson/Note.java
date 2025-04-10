@@ -15,4 +15,8 @@ public class Note {
     public String toString() {
         return "Note [pageCount=" + pageCount + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 44;
+    }
 }

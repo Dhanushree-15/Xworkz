@@ -15,4 +15,8 @@ public class Bus {
     public String toString() {
         return "Bus [seatCapacity=" + seatCapacity + ", busName=" + busName + ", fare=" + fare + "]";
     }
+    @Override
+    public int hashCode(){
+        return 89;
+    }
 }

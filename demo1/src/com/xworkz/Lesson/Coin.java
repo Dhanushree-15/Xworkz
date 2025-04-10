@@ -15,4 +15,8 @@ public class Coin {
     public String toString() {
         return "Coin [year=" + year + ", currency=" + currency + ", diameter=" + diameter + "]";
     }
+    @Override
+    public int hashCode(){
+        return 78;
+    }
 }

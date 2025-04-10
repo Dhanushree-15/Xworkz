@@ -15,4 +15,8 @@ public class Plate {
     public String toString() {
         return "Plate [diameter=" + diameter + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 37;
+    }
 }

@@ -15,4 +15,8 @@ public class Purse {
     public String toString() {
         return "Purse [compartments=" + compartments + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 36;
+    }
 }

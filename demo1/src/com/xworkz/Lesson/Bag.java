@@ -15,4 +15,9 @@ public class Bag {
     public String toString() {
         return "Bag [bagId=" + bagId + ", bagType=" + bagType + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 98;
+    }
+
 }

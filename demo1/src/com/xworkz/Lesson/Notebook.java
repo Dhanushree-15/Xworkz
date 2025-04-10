@@ -15,4 +15,8 @@ public class Notebook {
     public String toString() {
         return "Notebook [totalPages=" + totalPages + ", brand=" + brand + ", cost=" + cost + "]";
     }
+    @Override
+    public int hashCode(){
+        return 44;
+    }
 }

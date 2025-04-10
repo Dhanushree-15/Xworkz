@@ -15,4 +15,8 @@ public class Candle {
     public String toString() {
         return "Candle [height=" + height + ", color=" + color + ", burnTime=" + burnTime + "]";
     }
+    @Override
+    public int hashCode(){
+        return 85;
+    }
 }

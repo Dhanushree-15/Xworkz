@@ -15,4 +15,8 @@ public class Cup {
     public String toString() {
         return "Cup [capacityInMl=" + capacityInMl + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 76;
+    }
 }

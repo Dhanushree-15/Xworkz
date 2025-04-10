@@ -15,4 +15,8 @@ public class Scooter {
     public String toString() {
         return "Scooter [engineCC=" + engineCC + ", brand=" + brand + ", mileage=" + mileage + "]";
     }
+    @Override
+    public int hashCode(){
+        return 33;
+    }
 }

@@ -15,4 +15,8 @@ public class Fridge {
     public String toString() {
         return "Fridge [capacity=" + capacity + ", brand=" + brand + ", energyRating=" + energyRating + "]";
     }
+    @Override
+    public int hashCode(){
+        return 70;
+    }
 }

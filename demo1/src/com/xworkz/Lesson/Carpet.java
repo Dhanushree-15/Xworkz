@@ -15,4 +15,8 @@ public class Carpet {
     public String toString() {
         return "Carpet [length=" + length + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 82;
+    }
 }

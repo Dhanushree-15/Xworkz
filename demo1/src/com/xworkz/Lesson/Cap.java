@@ -15,4 +15,8 @@ public class Cap {
     public String toString() {
         return "Cap [size=" + size + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 84;
+    }
 }

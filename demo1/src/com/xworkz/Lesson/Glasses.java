@@ -15,4 +15,8 @@ public class Glasses {
     public String toString() {
         return "Glasses [lensPower=" + lensPower + ", frameType=" + frameType + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 69;
+    }
 }

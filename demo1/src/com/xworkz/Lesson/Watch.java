@@ -15,4 +15,8 @@ public class Watch {
     public String toString() {
         return "Watch [warrantyYears=" + warrantyYears + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 11;
+    }
 }

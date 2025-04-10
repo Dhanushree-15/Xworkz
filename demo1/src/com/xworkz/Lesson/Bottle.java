@@ -15,4 +15,9 @@ public class Bottle {
     public String toString() {
         return "Bottle [volumeInMl=" + volumeInMl + ", material=" + material + ", height=" + height + "]";
     }
+    @Override
+    public int hashCode(){
+        return 92;
+    }
+
 }

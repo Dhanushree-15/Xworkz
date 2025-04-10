@@ -15,4 +15,8 @@ public class Keyboard {
     public String toString() {
         return "Keyboard [numberOfKeys=" + numberOfKeys + ", type=" + type + ", weightInGrams=" + weightInGrams + "]";
     }
+    @Override
+    public int hashCode(){
+        return 59;
+    }
 }

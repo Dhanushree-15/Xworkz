@@ -15,4 +15,8 @@ public class Toothbrush {
     public String toString() {
         return "Toothbrush [bristleCount=" + bristleCount + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 16;
+    }
 }

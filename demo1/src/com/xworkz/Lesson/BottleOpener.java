@@ -15,4 +15,8 @@ public class BottleOpener {
     public String toString() {
         return "BottleOpener [durability=" + durability + ", handleMaterial=" + handleMaterial + ", weight=" + weight + "]";
     }
+    @Override
+    public int hashCode(){
+        return 91;
+    }
 }

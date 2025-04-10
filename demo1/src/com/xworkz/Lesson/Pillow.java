@@ -15,4 +15,8 @@ public class Pillow {
     public String toString() {
         return "Pillow [size=" + size + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 38;
+    }
 }

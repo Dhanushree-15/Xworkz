@@ -15,4 +15,9 @@ public class Binoculars {
     public String toString() {
         return "Binoculars [zoomLevel=" + zoomLevel + ", brand=" + brand + ", weight=" + weight + "]";
     }
+    @Override
+    public int hashCode(){
+        return 95;
+    }
+
 }

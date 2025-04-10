@@ -15,4 +15,8 @@ public class Clock {
     public String toString() {
         return "Clock [hourFormat=" + hourFormat + ", brand=" + brand + ", diameter=" + diameter + "]";
     }
+    @Override
+    public int hashCode(){
+        return 79;
+    }
 }

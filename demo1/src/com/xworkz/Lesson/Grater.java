@@ -15,4 +15,8 @@ public class Grater {
     public String toString() {
         return "Grater [bladeCount=" + bladeCount + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 67;
+    }
 }

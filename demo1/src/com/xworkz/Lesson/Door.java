@@ -15,4 +15,8 @@ public class Door {
     public String toString() {
         return "Door [heightInInches=" + heightInInches + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 75;
+    }
 }

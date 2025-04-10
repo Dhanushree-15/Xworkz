@@ -15,4 +15,8 @@ public class Knife {
     public String toString() {
         return "Knife [bladeLengthInCm=" + bladeLengthInCm + ", material=" + material + ", weightInGrams=" + weightInGrams + "]";
     }
+    @Override
+    public int hashCode(){
+        return 58;
+    }
 }

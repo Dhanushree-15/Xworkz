@@ -15,4 +15,8 @@ public class Lamp {
     public String toString() {
         return "Lamp [brightnessLevel=" + brightnessLevel + ", color=" + color + ", heightInInches=" + heightInInches + "]";
     }
+    @Override
+    public int hashCode(){
+        return 57;
+    }
 }

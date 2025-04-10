@@ -15,4 +15,8 @@ public class Lighter {
     public String toString() {
         return "Lighter [fuelCapacity=" + fuelCapacity + ", brand=" + brand + ", weight=" + weight + "]";
     }
+    @Override
+    public int hashCode(){
+        return 54;
+    }
 }

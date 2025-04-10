@@ -15,4 +15,8 @@ public class Microwave {
     public String toString() {
         return "Microwave [powerWatts=" + powerWatts + ", brand=" + brand + ", capacityLitres=" + capacityLitres + "]";
     }
+    @Override
+    public int hashCode(){
+        return 49;
+    }
 }

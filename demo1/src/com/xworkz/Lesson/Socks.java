@@ -15,4 +15,8 @@ public class Socks {
     public String toString() {
         return "Socks [size=" + size + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 26;
+    }
 }

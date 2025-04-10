@@ -15,4 +15,8 @@ public class Hat {
     public String toString() {
         return "Hat [size=" + size + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 66;
+    }
 }

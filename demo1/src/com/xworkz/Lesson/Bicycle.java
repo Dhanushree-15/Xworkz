@@ -15,4 +15,9 @@ public class Bicycle {
     public String toString() {
         return "Bicycle [gearCount=" + gearCount + ", brand=" + brand + ", wheelSize=" + wheelSize + "]";
     }
+    @Override
+    public int hashCode(){
+        return 96;
+    }
+
 }

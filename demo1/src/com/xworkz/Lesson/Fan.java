@@ -15,4 +15,8 @@ public class Fan {
     public String toString() {
         return "Fan [speedLevels=" + speedLevels + ", brand=" + brand + ", powerConsumption=" + powerConsumption + "]";
     }
+    @Override
+    public int hashCode(){
+        return 73;
+    }
 }

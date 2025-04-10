@@ -15,4 +15,8 @@ public class Bowl {
     public String toString() {
         return "Bowl [capacityInMl=" + capacityInMl + ", material=" + material + ", diameter=" + diameter + "]";
     }
+    @Override
+    public int hashCode(){
+        return 90;
+    }
 }

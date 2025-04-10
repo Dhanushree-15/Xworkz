@@ -15,4 +15,8 @@ public class Laptop {
     public String toString() {
         return "Laptop [ramSize=" + ramSize + ", brand=" + brand + ", processorSpeed=" + processorSpeed + "]";
     }
+    @Override
+    public int hashCode(){
+        return 55;
+    }
 }

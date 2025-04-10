@@ -15,4 +15,8 @@ public class Shampoo {
     public String toString() {
         return "Shampoo [quantityInML=" + quantityInML + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 32;
+    }
 }

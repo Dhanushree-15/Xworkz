@@ -15,4 +15,9 @@ public class Book {
     public String toString() {
         return "Book [pageCount=" + pageCount + ", title=" + title + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 93;
+    }
+
 }

@@ -15,4 +15,9 @@ public class Blanket {
     public String toString() {
         return "Blanket [thickness=" + thickness + ", material=" + material + ", length=" + length + "]";
     }
+    @Override
+    public int hashCode(){
+        return 94;
+    }
+
 }

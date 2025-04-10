@@ -15,4 +15,8 @@ public class Map {
     public String toString() {
         return "Map [scale=" + scale + ", region=" + region + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 52;
+    }
 }

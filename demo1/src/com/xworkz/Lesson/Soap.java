@@ -15,4 +15,8 @@ public class Soap {
     public String toString() {
         return "Soap [weight=" + weight + ", fragrance=" + fragrance + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 27;
+    }
 }

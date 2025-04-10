@@ -15,4 +15,8 @@ public class Freezer {
     public String toString() {
         return "Freezer [capacityInLiters=" + capacityInLiters + ", brand=" + brand + ", temperatureSetting=" + temperatureSetting + "]";
     }
+    @Override
+    public int hashCode(){
+        return 71;
+    }
 }

@@ -15,4 +15,8 @@ public class Towel {
     public String toString() {
         return "Towel [length=" + length + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 15;
+    }
 }

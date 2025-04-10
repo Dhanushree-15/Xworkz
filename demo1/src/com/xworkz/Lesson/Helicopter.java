@@ -15,4 +15,8 @@ public class Helicopter {
     public String toString() {
         return "Helicopter [a=" + a + ", b=" + b + ", c=" + c + "]";
     }
+    @Override
+    public int hashCode(){
+        return 65;
+    }
 }

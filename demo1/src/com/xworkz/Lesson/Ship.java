@@ -15,4 +15,8 @@ public class Ship {
     public String toString() {
         return "Ship [capacity=" + capacity + ", name=" + name + ", speed=" + speed + "]";
     }
+    @Override
+    public int hashCode(){
+        return 31;
+    }
 }

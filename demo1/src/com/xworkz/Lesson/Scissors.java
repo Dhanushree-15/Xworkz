@@ -15,4 +15,8 @@ public class Scissors {
     public String toString() {
         return "Scissors [bladeLength=" + bladeLength + ", handleMaterial=" + handleMaterial + ", weight=" + weight + "]";
     }
+    @Override
+    public int hashCode(){
+        return 34;
+    }
 }

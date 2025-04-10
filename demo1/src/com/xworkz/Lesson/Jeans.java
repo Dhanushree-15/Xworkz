@@ -15,4 +15,8 @@ public class Jeans {
     public String toString() {
         return "Jeans [waistSize=" + waistSize + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 62;
+    }
 }

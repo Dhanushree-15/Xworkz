@@ -15,4 +15,8 @@ public class Conditioner {
     public String toString() {
         return "Conditioner [volumeInMl=" + volumeInMl + ", fragrance=" + fragrance + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 75;
+    }
 }

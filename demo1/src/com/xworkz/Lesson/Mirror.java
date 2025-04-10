@@ -15,4 +15,8 @@ public class Mirror {
     public String toString() {
         return "Mirror [heightCm=" + heightCm + ", shape=" + shape + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 48;
+    }
 }

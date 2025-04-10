@@ -15,4 +15,8 @@ public class Key {
     public String toString() {
         return "Key [numberOfTeeth=" + numberOfTeeth + ", type=" + type + ", lengthInCm=" + lengthInCm + "]";
     }
+    @Override
+    public int hashCode(){
+        return 60;
+    }
 }

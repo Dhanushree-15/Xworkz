@@ -15,4 +15,8 @@ public class Lantern {
     public String toString() {
         return "Lantern [fuelCapacity=" + fuelCapacity + ", material=" + material + ", height=" + height + "]";
     }
+    @Override
+    public int hashCode(){
+        return 56;
+    }
 }

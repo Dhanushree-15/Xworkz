@@ -15,4 +15,8 @@ public class Marker {
     public String toString() {
         return "Marker [inkLevel=" + inkLevel + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 51;
+    }
 }

@@ -15,4 +15,8 @@ public class Speaker {
     public String toString() {
         return "Speaker [volumeLevel=" + volumeLevel + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 24;
+    }
 }

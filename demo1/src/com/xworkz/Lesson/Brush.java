@@ -15,4 +15,8 @@ public class Brush {
     public String toString() {
         return "Brush [bristleCount=" + bristleCount + ", brushType=" + brushType + ", length=" + length + "]";
     }
+    @Override
+    public int hashCode(){
+        return 90;
+    }
 }

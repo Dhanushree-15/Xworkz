@@ -15,4 +15,8 @@ public class Kettle {
     public String toString() {
         return "Kettle [capacityInLiters=" + capacityInLiters + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 61;
+    }
 }

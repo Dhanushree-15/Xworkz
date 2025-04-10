@@ -15,4 +15,9 @@ public class Blender {
     public String toString() {
         return "Blender [speedLevels=" + speedLevels + ", brand=" + brand + ", capacity=" + capacity + "]";
     }
+    @Override
+    public int hashCode(){
+        return 94;
+    }
+
 }

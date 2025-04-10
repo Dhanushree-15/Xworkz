@@ -15,4 +15,8 @@ public class Calculator {
     public String toString() {
         return "Calculator [numberOfButtons=" + numberOfButtons + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode(){
+        return 88;
+    }
 }
