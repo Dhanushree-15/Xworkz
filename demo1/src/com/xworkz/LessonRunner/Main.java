@@ -4,16 +4,32 @@ import com.xworkz.Lesson.*;
 
 public class Main {
     public static void main(String[] args) {
-        Airplane airplane=new Airplane(94, "Airplane", 920.5);
+        Airplane airplane = new Airplane(94, "Airplane", 920.5);
         System.out.println(airplane);
         System.out.println(airplane.hashCode());
-        System.out.println("Original: "+System.identityHashCode(airplane));
+        System.out.println("Original: " + System.identityHashCode(airplane));
+        Airplane airplane1 = new Airplane(2, "Boeing 747", 950.5);
+        Airplane airplane2 = new Airplane(2, "Boeing 747", 950.5);
+        Airplane airplane3 = new Airplane(4, "Airbus A380", 1020.0);
+
+        System.out.println(airplane1.toString());
+        System.out.println("airplane1 equals airplane2: " + airplane1.equals(airplane2)); // true
+        System.out.println("airplane1 equals airplane3: " + airplane1.equals(airplane3)); // false
         System.out.println("****");
-        Bag bag = new Bag(2, "Bag", 89.1);
-        System.out.println(bag);
-        System.out.println(bag.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bag));
+
+
+
+        Bag bag1 = new Bag(101, "Backpack", 1200.0);
+        Bag bag2 = new Bag(101, "Backpack", 1200.0);
+        Bag bag3 = new Bag(102, "Trolley", 3500.0);
+
+        System.out.println(bag1);
+        System.out.println(bag1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(bag1));
         System.out.println("****");
+
+        System.out.println("bag1 equals bag2: " + bag1.equals(bag2)); // true
+        System.out.println("bag1 equals bag3: " + bag1.equals(bag3));
 
         Bed bed = new Bed(3, "Bed", 23.1);
         System.out.println(bed);

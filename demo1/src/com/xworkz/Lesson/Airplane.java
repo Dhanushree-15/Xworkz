@@ -19,4 +19,24 @@ public class Airplane {
     public int hashCode(){
         return 99;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Airplane) {
+                System.out.println("ref is Airplane, will compare...");
+                Airplane a1 = this;
+                Airplane a2 = (Airplane) obj;
+
+                if (a1.numberOfEngines == a2.numberOfEngines &&
+                        a1.maxSpeed == a2.maxSpeed &&
+                        (a1.model != null && a1.model.equals(a2.model))) {
+
+                    System.out.println("both airplanes are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
