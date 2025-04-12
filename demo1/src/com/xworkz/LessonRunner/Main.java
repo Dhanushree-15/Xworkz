@@ -13,8 +13,8 @@ public class Main {
         Airplane airplane3 = new Airplane(4, "Airbus A380", 1020.0);
 
         System.out.println(airplane1.toString());
-        System.out.println("airplane1 equals airplane2: " + airplane1.equals(airplane2)); // true
-        System.out.println("airplane1 equals airplane3: " + airplane1.equals(airplane3)); // false
+        System.out.println("airplane1 equals airplane2: " + airplane1.equals(airplane2));
+        System.out.println("airplane1 equals airplane3: " + airplane1.equals(airplane3));
         System.out.println("****");
 
 
@@ -26,51 +26,94 @@ public class Main {
         System.out.println(bag1);
         System.out.println(bag1.hashCode());
         System.out.println("Original: " + System.identityHashCode(bag1));
-        System.out.println("****");
 
-        System.out.println("bag1 equals bag2: " + bag1.equals(bag2)); // true
+
+        System.out.println("bag1 equals bag2: " + bag1.equals(bag2));
         System.out.println("bag1 equals bag3: " + bag1.equals(bag3));
-
-        Bed bed = new Bed(3, "Bed", 23.1);
-        System.out.println(bed);
-        System.out.println(bed.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bed));
         System.out.println("****");
 
-        Belt belt = new Belt(4, "Belt", 70.1);
-        System.out.println(belt);
-        System.out.println(belt.hashCode());
-        System.out.println("Original: " + System.identityHashCode(belt));
+        Bed bed1 = new Bed(501, "Single", 6.5);
+        Bed bed2 = new Bed(501, "Single", 6.5);
+        Bed bed3 = new Bed(502, "Double", 7.0);
+
+        System.out.println(bed1);
+        System.out.println(bed1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(bed1));
+
+
+        System.out.println("bed1 equals bed2: " + bed1.equals(bed2));
+        System.out.println("bed1 equals bed3: " + bed1.equals(bed3));
         System.out.println("****");
 
-        Bicycle bicycle = new Bicycle(5, "Bicycle", 71.1);
-        System.out.println(bicycle);
-        System.out.println(bicycle.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bicycle));
+        Belt belt1 = new Belt(201, "Leather", 42.5);
+        Belt belt2 = new Belt(201, "Leather", 42.5);
+        Belt belt3 = new Belt(202, "Canvas", 38.0);
+
+        System.out.println(belt1);
+        System.out.println(belt1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(belt1));
+
+        System.out.println("belt1 equals belt2: " + belt1.equals(belt2)); // true
+        System.out.println("belt1 equals belt3: " + belt1.equals(belt3));
         System.out.println("****");
 
-        Binoculars binoculars = new Binoculars(6, "Binoculars", 94.1);
-        System.out.println(binoculars);
-        System.out.println(binoculars.hashCode());
-        System.out.println("Original: " + System.identityHashCode(binoculars));
+        Bicycle cycle1 = new Bicycle(18, "Hero", 27.5);
+        Bicycle cycle2 = new Bicycle(18, "Hero", 27.5);
+        Bicycle cycle3 = new Bicycle(21, "Firefox", 29.0);
+
+        System.out.println(cycle1);
+        System.out.println(cycle1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(cycle1));
+
+        System.out.println("cycle1 equals cycle2: " + cycle1.equals(cycle2)); // true
+        System.out.println("cycle1 equals cycle3: " + cycle1.equals(cycle3));
         System.out.println("****");
 
-        Blanket blanket = new Blanket(7, "Blanket", 22.1);
-        System.out.println(blanket);
-        System.out.println(blanket.hashCode());
-        System.out.println("Original: " + System.identityHashCode(blanket));
+        Binoculars bino1 = new Binoculars(20, "Nikon", 1.5);
+        Binoculars bino2 = new Binoculars(20, "Nikon", 1.5);
+        Binoculars bino3 = new Binoculars(25, "Canon", 1.7);
+
+        System.out.println(bino1);
+        System.out.println(bino1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(bino1));
+
+        System.out.println("bino1 equals bino2: " + bino1.equals(bino2));
+        System.out.println("bino1 equals bino3: " + bino1.equals(bino3));
         System.out.println("****");
 
-        Blender blender = new Blender(8, "Blender", 55.1);
-        System.out.println(blender);
-        System.out.println(blender.hashCode());
-        System.out.println("Original: " + System.identityHashCode(blender));
+        Blanket blanket1 = new Blanket(5, "Wool", 2.5);
+        Blanket blanket2 = new Blanket(5, "Wool", 2.5);
+        Blanket blanket3 = new Blanket(7, "Cotton", 2.0);
+
+        System.out.println(blanket1);
+        System.out.println(blanket1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(blanket1));
+        System.out.println("blanket1 equals blanket2: " + blanket1.equals(blanket2));
+        System.out.println("blanket1 equals blanket3: " + blanket1.equals(blanket3));
         System.out.println("****");
 
-        Boat boat = new Boat(9, "Boat", 79.1);
-        System.out.println(boat);
-        System.out.println(boat.hashCode());
-        System.out.println("Original: " + System.identityHashCode(boat));
+        Blender blender1 = new Blender(3, "Philips", 1.2);
+        Blender blender2 = new Blender(3, "Philips", 1.2);
+        Blender blender3 = new Blender(5, "Bajaj", 1.5);
+
+        System.out.println(blender1);
+        System.out.println(blender1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(blender1));
+
+        System.out.println("blender1 equals blender2: " + blender1.equals(blender2));
+        System.out.println("blender1 equals blender3: " + blender1.equals(blender3));
+        System.out.println("****");
+
+        Boat boat1 = new Boat(12, "Fishing", 15.5);
+        Boat boat2 = new Boat(12, "Fishing", 15.5);
+        Boat boat3 = new Boat(8, "Speed", 10.0);
+
+        System.out.println(boat1);
+        System.out.println(boat1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(boat1));
+
+        System.out.println("boat1 equals boat2: " + boat1.equals(boat2)); // true
+        System.out.println("boat1 equals boat3: " + boat1.equals(boat3));
         System.out.println("****");
 
         Book book = new Book(10, "Book", 1.1);
@@ -79,142 +122,282 @@ public class Main {
         System.out.println("Original: " + System.identityHashCode(book));
         System.out.println("****");
 
-        Bottle bottle = new Bottle(11, "Bottle", 5.1);
-        System.out.println(bottle);
-        System.out.println(bottle.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bottle));
+        Book book1 = new Book(300, "Java Basics", 499.99);
+        Book book2 = new Book(300, "Java Basics", 499.99);
+        Book book3 = new Book(200, "Python Guide", 399.50);
+
+        System.out.println(book1);
+        System.out.println(book1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(book1));
+
+        System.out.println("book1 equals book2: " + book1.equals(book2));
+        System.out.println("book1 equals book3: " + book1.equals(book3));
         System.out.println("****");
 
-        BottleOpener bottleOpener = new BottleOpener(12, "BottleOpener", 97.1);
-        System.out.println(bottleOpener);
-        System.out.println(bottleOpener.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bottleOpener));
+        Bottle bottle1 = new Bottle(1000, "Plastic", 25.5);
+        Bottle bottle2 = new Bottle(1000, "Plastic", 25.5);
+        Bottle bottle3 = new Bottle(750, "Glass", 20.0);
+
+        System.out.println(bottle1);
+        System.out.println(bottle1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(bottle1));
+
+        System.out.println("bottle1 equals bottle2: " + bottle1.equals(bottle2)); // true
+        System.out.println("bottle1 equals bottle3: " + bottle1.equals(bottle3));
         System.out.println("****");
 
-        Bowl bowl = new Bowl(13, "Bowl", 20.1);
-        System.out.println(bowl);
-        System.out.println(bowl.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bowl));
+        Bowl bowl1 = new Bowl(500, "Ceramic", 12.5);
+        Bowl bowl2 = new Bowl(500, "Ceramic", 12.5);
+        Bowl bowl3 = new Bowl(700, "Plastic", 13.0);
+
+        System.out.println(bowl1);
+        System.out.println("hashCode: " + bowl1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(bowl1));
+        System.out.println("Comparing bowl1 and bowl2: " + bowl1.equals(bowl2));
+        System.out.println("Comparing bowl1 and bowl3: " + bowl1.equals(bowl3));
         System.out.println("****");
 
-        Brush brush = new Brush(14, "Brush", 31.1);
-        System.out.println(brush);
-        System.out.println(brush.hashCode());
-        System.out.println("Original: " + System.identityHashCode(brush));
+        Brush brush1 = new Brush(1000, "Toothbrush", 7.5);
+        Brush brush2 = new Brush(1000, "Toothbrush", 7.5);
+        Brush brush3 = new Brush(800, "Paintbrush", 9.0);
+
+        System.out.println(brush1);
+        System.out.println("hashCode: " + brush1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(brush1));
+        System.out.println("Comparing brush1 and brush2: " + brush1.equals(brush2));
+        System.out.println("Comparing brush1 and brush3: " + brush1.equals(brush3));
         System.out.println("****");
 
-        Bus bus = new Bus(15, "Bus", 75.1);
-        System.out.println(bus);
-        System.out.println(bus.hashCode());
-        System.out.println("Original: " + System.identityHashCode(bus));
+        Bus bus1 = new Bus(50, "KSRTC", 25.0);
+        Bus bus2 = new Bus(50, "KSRTC", 25.0);
+        Bus bus3 = new Bus(40, "CityBus", 15.0);
+
+        System.out.println(bus1);
+        System.out.println("hashCode: " + bus1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(bus1));
+        System.out.println("Comparing bus1 and bus2: " + bus1.equals(bus2));
+        System.out.println("Comparing bus1 and bus3: " + bus1.equals(bus3));
         System.out.println("****");
 
-        Camera camera = new Camera(16, "Camera", 8.1);
-        System.out.println(camera);
-        System.out.println(camera.hashCode());
-        System.out.println("Original: " + System.identityHashCode(camera));
+        Calculator c1 = new Calculator(24, "Casio", 399.99);
+        Calculator c2 = new Calculator(24, "Casio", 399.99);
+        Calculator c3 = new Calculator(20, "Citizen", 299.99);
+
+        System.out.println(c1);
+        System.out.println("hashCode: " + c1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(c1));
+        System.out.println("Comparing c1 and c2: " + c1.equals(c2));
+        System.out.println("Comparing c1 and c3: " + c1.equals(c3));
         System.out.println("****");
 
-        Can can = new Can(17, "Can", 96.1);
-        System.out.println(can);
-        System.out.println(can.hashCode());
-        System.out.println("Original: " + System.identityHashCode(can));
+        Camera camera1 = new Camera(24, "Canon", 59999.99);
+        Camera camera2 = new Camera(24, "Canon", 59999.99);
+        Camera camera3 = new Camera(20, "Nikon", 45999.00);
+
+        System.out.println(camera1);
+        System.out.println("hashCode: " + camera1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(camera1));
+
+        System.out.println("Comparing camera1 and camera2: " + camera1.equals(camera2));
+        System.out.println("Comparing camera1 and camera3: " + camera1.equals(camera3));
         System.out.println("****");
 
-        Candle candle = new Candle(18, "Candle", 100.1);
-        System.out.println(candle);
-        System.out.println(candle.hashCode());
-        System.out.println("Original: " + System.identityHashCode(candle));
-        System.out.println("*****");
+        Can can1 = new Can(5, "Plastic", 49.99);
+        Can can2 = new Can(5, "Plastic", 49.99);
+        Can can3 = new Can(10, "Steel", 99.99);
 
-        Cap cap = new Cap(19, "Cap", 68.1);
-        System.out.println(cap);
-        System.out.println(cap.hashCode());
-        System.out.println("Original: " + System.identityHashCode(cap));
-        System.out.println("*****");
+        System.out.println(can1);
+        System.out.println("hashCode: " + can1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(can1));
 
-        Carpet carpet = new Carpet(20, "Carpet", 28.1);
-        System.out.println(carpet);
-        System.out.println(carpet.hashCode());
-        System.out.println("Original: " + System.identityHashCode(carpet));
-        System.out.println("*****");
-
-        Car car = new Car(21, "Car", 74.1);
-        System.out.println(car);
-        System.out.println(car.hashCode());
-        System.out.println("Original: " + System.identityHashCode(car));
+        System.out.println("Comparing can1 and can2: " + can1.equals(can2));
+        System.out.println("Comparing can1 and can3: " + can1.equals(can3));
         System.out.println("****");
 
-        Calculator calculator = new Calculator(22, "Calculator", 45.1);
-        System.out.println(calculator);
-        System.out.println(calculator.hashCode());
-        System.out.println("Original: " + System.identityHashCode(calculator));
+        Candle candle1 = new Candle(10, "Red", 5.5);
+        Candle candle2 = new Candle(10, "Red", 5.5);
+        Candle candle3 = new Candle(12, "White", 6.0);
+
+        System.out.println(candle1);
+        System.out.println("hashCode: " + candle1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(candle1));
+
+        System.out.println("Comparing candle1 and candle2: " + candle1.equals(candle2));
+        System.out.println("Comparing candle1 and candle3: " + candle1.equals(candle3));
         System.out.println("****");
 
-        Chair chair = new Chair(23, "Chair", 2.1);
-        System.out.println(chair);
-        System.out.println(chair.hashCode());
-        System.out.println("Original: " + System.identityHashCode(chair));
+        Cap cap1 = new Cap(7, "Blue", 149.99);
+        Cap cap2 = new Cap(7, "Blue", 149.99);
+        Cap cap3 = new Cap(8, "Black", 159.49);
+
+        System.out.println(cap1);
+        System.out.println("hashCode: " + cap1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(cap1));
+
+        System.out.println("Comparing cap1 and cap2: " + cap1.equals(cap2));
+        System.out.println("Comparing cap1 and cap3: " + cap1.equals(cap3));
         System.out.println("****");
 
-        Charger charger = new Charger(24, "Charger", 49.1);
-        System.out.println(charger);
-        System.out.println(charger.hashCode());
-        System.out.println("Original: " + System.identityHashCode(charger));
-        System.out.println("*****");
+        Car car1 = new Car(2021, "Tesla", 49999.99);
+        Car car2 = new Car(2021, "Tesla", 49999.99);
+        Car car3 = new Car(2022, "BMW", 59999.99);
 
-        Clock clock = new Clock(25, "Clock", 30.1);
-        System.out.println(clock);
-        System.out.println(clock.hashCode());
-        System.out.println("Original: " + System.identityHashCode(clock));
-        System.out.println("*****");
+        System.out.println(car1);
+        System.out.println("hashCode: " + car1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(car1));
 
-        Coin coin = new Coin(26, "Coin", 85.1);
-        System.out.println(coin);
-        System.out.println(coin.hashCode());
-        System.out.println("Original: " + System.identityHashCode(coin));
-        System.out.println("*****");
+        System.out.println("Comparing car1 and car2: " + car1.equals(car2));
+        System.out.println("Comparing car1 and car3: " + car1.equals(car3));
+        System.out.println("****");
 
-        Comb comb = new Comb(27, "Comb", 32.1);
-        System.out.println(comb);
-        System.out.println(comb.hashCode());
-        System.out.println("Original: " + System.identityHashCode(comb));
-        System.out.println("*****");
+        Carpet carpet1 = new Carpet(10, "Wool", 1500.75);
+        Carpet carpet2 = new Carpet(10, "Wool", 1500.75);
+        Carpet carpet3 = new Carpet(12, "Cotton", 1800.50);
 
-        Compass compass = new Compass(28, "Compass", 93.1);
-        System.out.println(compass);
-        System.out.println(compass.hashCode());
-        System.out.println("Original: " + System.identityHashCode(compass));
-        System.out.println("*****");
+        System.out.println(carpet1);
+        System.out.println("hashCode: " + carpet1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(carpet1));
 
-        Conditioner conditioner = new Conditioner(29, "Conditioner", 37.1);
-        System.out.println(conditioner);
-        System.out.println(conditioner.hashCode());
-        System.out.println("Original: " + System.identityHashCode(conditioner));
-        System.out.println("*****");
+        System.out.println("Comparing carpet1 and carpet2: " + carpet1.equals(carpet2));
+        System.out.println("Comparing carpet1 and carpet3: " + carpet1.equals(carpet3));
+        System.out.println("****");
 
-        Cup cup = new Cup(30, "Cup", 19.1);
-        System.out.println(cup);
-        System.out.println(cup.hashCode());
-        System.out.println("Original: " + System.identityHashCode(cup));
-        System.out.println("*****");
+        Chair chair1 = new Chair(4, "Wood", 1.2);
+        Chair chair2 = new Chair(4, "Wood", 1.2);
+        Chair chair3 = new Chair(3, "Plastic", 1.0);
 
-        Door door = new Door(31, "Door", 27.1);
-        System.out.println(door);
-        System.out.println(door.hashCode());
-        System.out.println("Original: " + System.identityHashCode(door));
-        System.out.println("*****");
+        System.out.println(chair1);
+        System.out.println("hashCode: " + chair1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(chair1));
 
-        Eraser eraser = new Eraser(32, "Eraser", 42.1);
-        System.out.println(eraser);
-        System.out.println(eraser.hashCode());
-        System.out.println("Original: " + System.identityHashCode(eraser));
-        System.out.println("*****");
 
-        Fan fan = new Fan(33, "Fan", 11.1);
-        System.out.println(fan);
-        System.out.println(fan.hashCode());
-        System.out.println("Original: " + System.identityHashCode(fan));
+        System.out.println("Comparing chair1 and chair2: " + chair1.equals(chair2));
+        System.out.println("Comparing chair1 and chair3: " + chair1.equals(chair3));
+        System.out.println("****");
+
+        Charger charger1 = new Charger(20, "Samsung", 5.0);
+        Charger charger2 = new Charger(20, "Samsung", 5.0);
+        Charger charger3 = new Charger(15, "Apple", 5.0);
+
+        System.out.println(charger1);
+        System.out.println("hashCode: " + charger1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(charger1));
+
+        System.out.println("Comparing charger1 and charger2: " + charger1.equals(charger2));
+        System.out.println("Comparing charger1 and charger3: " + charger1.equals(charger3));
+        System.out.println("****");
+
+        Clock clock1 = new Clock(12, "Rolex", 5.5);
+        Clock clock2 = new Clock(12, "Rolex", 5.5);
+        Clock clock3 = new Clock(24, "Omega", 5.0);
+
+        System.out.println(clock1);
+        System.out.println("hashCode: " + clock1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(clock1));
+
+        System.out.println("Comparing clock1 and clock2: " + clock1.equals(clock2));
+        System.out.println("Comparing clock1 and clock3: " + clock1.equals(clock3));
+        System.out.println("****");
+
+        Coin coin1 = new Coin(2023, "INR", 2.0);
+        Coin coin2 = new Coin(2023, "INR", 2.0);
+        Coin coin3 = new Coin(2021, "USD", 2.5);
+
+        System.out.println(coin1);
+        System.out.println("hashCode: " + coin1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(coin1));
+
+        System.out.println("Comparing coin1 and coin2: " + coin1.equals(coin2));
+        System.out.println("Comparing coin1 and coin3: " + coin1.equals(coin3));
+        System.out.println("****");
+
+        Comb comb1 = new Comb(20, "Plastic", 15.5);
+        Comb comb2 = new Comb(20, "Plastic", 15.5);
+        Comb comb3 = new Comb(18, "Wood", 16.0);
+
+        System.out.println(comb1);
+        System.out.println("hashCode: " + comb1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(comb1));
+
+        System.out.println("Comparing comb1 and comb2: " + comb1.equals(comb2));
+        System.out.println("Comparing comb1 and comb3: " + comb1.equals(comb3));
+        System.out.println("****");
+
+        Compass compass1 = new Compass(12, "Magnetic", 5.5);
+        Compass compass2 = new Compass(12, "Magnetic", 5.5);
+        Compass compass3 = new Compass(10, "Solar", 6.0);
+
+        System.out.println(compass1);
+        System.out.println("hashCode: " + compass1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(compass1));
+
+        System.out.println("Comparing compass1 and compass2: " + compass1.equals(compass2));
+        System.out.println("Comparing compass1 and compass3: " + compass1.equals(compass3));
+        System.out.println("****");
+
+
+        Conditioner conditioner1 = new Conditioner(200, "Lavender", 299.99);
+        Conditioner conditioner2 = new Conditioner(200, "Lavender", 299.99);
+        Conditioner conditioner3 = new Conditioner(300, "Rose", 399.99);
+
+        System.out.println(conditioner1);
+        System.out.println("hashCode: " + conditioner1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(conditioner1));
+
+        System.out.println("Comparing conditioner1 and conditioner2: " + conditioner1.equals(conditioner2));
+        System.out.println("Comparing conditioner1 and conditioner3: " + conditioner1.equals(conditioner3));
+        System.out.println("****");
+
+        Cup cup1 = new Cup(250, "Ceramic", 150.00);
+        Cup cup2 = new Cup(250, "Ceramic", 150.00);
+        Cup cup3 = new Cup(300, "Glass", 200.00);
+
+        System.out.println(cup1);
+        System.out.println("hashCode: " + cup1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(cup1));
+
+        System.out.println("Comparing cup1 and cup2: " + cup1.equals(cup2));
+        System.out.println("Comparing cup1 and cup3: " + cup1.equals(cup3));
+        System.out.println("****");
+
+        Door door1 = new Door(80, "Wood", 5000.00);
+        Door door2 = new Door(80, "Wood", 5000.00);
+        Door door3 = new Door(90, "Metal", 6000.00);
+
+        System.out.println(door1);
+        System.out.println("hashCode: " + door1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(door1));
+
+        System.out.println("Comparing door1 and door2: " + door1.equals(door2));
+        System.out.println("Comparing door1 and door3: " + door1.equals(door3));
+        System.out.println("****");
+
+        Eraser eraser1 = new Eraser(5, "Nataraj", 10.50);
+        Eraser eraser2 = new Eraser(5, "Nataraj", 10.50);
+        Eraser eraser3 = new Eraser(6, "Faber-Castell", 15.00);
+
+        System.out.println(eraser1);
+        System.out.println("hashCode: " + eraser1.hashCode());
+        System.out.println("Original: " + System.identityHashCode(eraser1));
+
+        System.out.println("Comparing eraser1 and eraser2: " + eraser1.equals(eraser2));
+        System.out.println("Comparing eraser1 and eraser3: " + eraser1.equals(eraser3));
+        System.out.println("****");
+
+        Fan fan1 = new Fan(5, "Usha", 75.5);
+        Fan fan2 = new Fan(5, "Usha", 75.5);
+        Fan fan3 = new Fan(3, "Havells", 60.0);
+
+        System.out.println("Fan 1: " + fan1);
+        System.out.println("Fan 2: " + fan2);
+        System.out.println("Fan 3: " + fan3);
+
+        System.out.println("HashCode of Fan 1: " + fan1.hashCode());
+        System.out.println("HashCode of Fan 2: " + fan2.hashCode());
+        System.out.println("HashCode of Fan 3: " + fan3.hashCode());
+
+        System.out.println("Is Fan 1 equal to Fan 2? " + fan1.equals(fan2));
+        System.out.println("Is Fan 1 equal to Fan 3? " + fan1.equals(fan3));
         System.out.println("*****");
 
         Fork fork = new Fork(34, "Fork", 17.1);

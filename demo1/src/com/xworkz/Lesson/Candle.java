@@ -15,8 +15,30 @@ public class Candle {
     public String toString() {
         return "Candle [height=" + height + ", color=" + color + ", burnTime=" + burnTime + "]";
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 85;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Candle) {
+                System.out.println("ref is Candle, will compare...");
+                Candle c1 = this;
+                Candle c2 = (Candle) obj;
+
+                if (c1.height == c2.height &&
+                        c1.burnTime == c2.burnTime &&
+                        (c1.color != null && c1.color.equals(c2.color))) {
+
+                    System.out.println("both candles are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

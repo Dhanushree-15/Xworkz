@@ -15,8 +15,30 @@ public class Carpet {
     public String toString() {
         return "Carpet [length=" + length + ", material=" + material + ", price=" + price + "]";
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 82;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Carpet) {
+                System.out.println("ref is Carpet, will compare...");
+                Carpet carpet1 = this;
+                Carpet carpet2 = (Carpet) obj;
+
+                if (carpet1.length == carpet2.length &&
+                        carpet1.price == carpet2.price &&
+                        (carpet1.material != null && carpet1.material.equals(carpet2.material))) {
+
+                    System.out.println("both carpets are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

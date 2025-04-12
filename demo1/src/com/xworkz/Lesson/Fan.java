@@ -15,8 +15,30 @@ public class Fan {
     public String toString() {
         return "Fan [speedLevels=" + speedLevels + ", brand=" + brand + ", powerConsumption=" + powerConsumption + "]";
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return 73;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Fan) {
+                System.out.println("ref is Fan, will compare...");
+                Fan f1 = this;
+                Fan f2 = (Fan) obj;
+
+                if (f1.speedLevels == f2.speedLevels &&
+                        f1.powerConsumption == f2.powerConsumption &&
+                        (f1.brand != null && f1.brand.equals(f2.brand))) {
+
+                    System.out.println("both fans are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
