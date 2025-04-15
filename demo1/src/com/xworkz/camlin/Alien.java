@@ -1,4 +1,4 @@
-package com.xworkz.Camlin;
+package com.xworkz.camlin;
 
 public class Alien {
     private String seenBy;
