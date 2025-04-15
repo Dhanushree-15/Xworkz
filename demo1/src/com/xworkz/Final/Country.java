@@ -1,7 +1,7 @@
 package com.xworkz.Final;
 
 import com.xworkz.govt.State;
-import com.xworkz.District.Detail;
+import com.xworkz.district.Detail;
 public class Country {
     public static void display() {
         Detail.display();
