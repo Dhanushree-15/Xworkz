@@ -1,7 +1,5 @@
 package com.xworkz.dream.hybrid;
 
-import com.xworkz.inheritancetypes.single.appliance.WashingMachine;
-
 public class RunHybrid {
     public static void main(String[] args) {
         Bird bird=new Bird();
