@@ -5,7 +5,7 @@ public interface ISmartBulb {
     void dimLight();
     void turnOff();
 
-    default void measureTwice() {
+    default void storeTool() {
         System.out.println("To measure twice, drill once.");
     }
 

@@ -5,7 +5,7 @@ public interface IWashingMachine {
     void rinse();
     void spin();
 
-    default void testHold() {
+    default void resetBit() {
         System.out.println("To test if item holds.");
     }
 

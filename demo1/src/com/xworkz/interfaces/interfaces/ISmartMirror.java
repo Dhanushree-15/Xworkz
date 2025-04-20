@@ -5,7 +5,7 @@ public interface ISmartMirror {
     void showTime();
     void adjustBrightness();
 
-    default void inspectWork() {
+    default void lightArea() {
         System.out.println("To inspect the drilled hole.");
     }
 

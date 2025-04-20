@@ -5,7 +5,7 @@ public interface ISpeakerSystem {
     void adjustBass();
     void mute();
 
-    default void stabilizeTool() {
+    default void markLevel() {
         System.out.println("To stabilize the tool.");
     }
 

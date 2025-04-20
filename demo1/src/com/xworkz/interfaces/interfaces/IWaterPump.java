@@ -5,7 +5,7 @@ public interface IWaterPump {
     void stop();
     void setFlowRate();
 
-    default void turnOff() {
+    default void sealGap() {
         System.out.println("To turn off after use.");
     }
 

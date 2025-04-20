@@ -5,7 +5,7 @@ public interface ISmartFridge {
     void cool();
     void notify1();
 
-    default void storeTool() {
+    default void lubricateBit() {
         System.out.println("To store the tool properly.");
     }
 

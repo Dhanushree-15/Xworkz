@@ -5,7 +5,7 @@ public interface ISmartLock {
     void unlock();
     void setPIN();
 
-    default void lubricateBit() {
+    default void inspectWork() {
         System.out.println("To lubricate the bit.");
     }
 

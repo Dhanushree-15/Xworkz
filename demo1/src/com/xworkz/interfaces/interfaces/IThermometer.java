@@ -5,7 +5,7 @@ public interface IThermometer {
     void reset();
     void calibrate();
 
-    default void reviewPlan() {
+    default void cutThrough() {
         System.out.println("To review drilling plan.");
     }
 

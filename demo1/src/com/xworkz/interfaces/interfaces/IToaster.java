@@ -5,7 +5,7 @@ public interface IToaster {
     void toast();
     void eject();
 
-    default void wearGoggles() {
+    default void checkAlignment() {
         System.out.println("To wear protective goggles.");
     }
 

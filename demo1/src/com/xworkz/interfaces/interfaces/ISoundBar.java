@@ -5,7 +5,7 @@ public interface ISoundBar {
     void adjustVolume();
     void connectBluetooth();
 
-    default void cleanBit() {
+    default void adjustTorque() {
         System.out.println("To clean the drill bit.");
     }
 

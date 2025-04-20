@@ -5,7 +5,7 @@ public interface ITelevision {
     void powerOff();
     void changeChannel();
 
-    default void testFit() {
+    default void reviewPlan() {
         System.out.println("To test fit before final install.");
     }
 

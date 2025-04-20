@@ -5,7 +5,7 @@ public interface IWatch {
     void startTimer();
     void stopTimer();
 
-    default void resetBit() {
+    default void turnOff() {
         System.out.println("To reset the drill bit.");
     }
 

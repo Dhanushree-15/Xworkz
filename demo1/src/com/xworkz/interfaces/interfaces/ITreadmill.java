@@ -5,7 +5,7 @@ public interface ITreadmill {
     void stop();
     void adjustIncline();
 
-    default void checkAlignment() {
+    default void clearDebris() {
         System.out.println("To check the alignment.");
     }
 

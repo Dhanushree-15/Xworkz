@@ -5,7 +5,7 @@ public interface ISmartWatch {
     void monitorHeartRate();
     void displayTime();
 
-    default void lockChuck() {
+    default void cleanBit() {
         System.out.println("To lock the chuck properly.");
     }
 

@@ -5,7 +5,7 @@ public interface ITVRemote {
     void increaseVolume();
     void mute();
 
-    default void clearDebris() {
+    default void smoothHole() {
         System.out.println("To clear drilling debris.");
     }
 

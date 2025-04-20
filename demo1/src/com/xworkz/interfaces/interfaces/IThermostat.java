@@ -5,7 +5,7 @@ public interface IThermostat {
     void increaseTemp();
     void decreaseTemp();
 
-    default void cutThrough() {
+    default void wearGoggles() {
         System.out.println("To cut through drywall.");
     }
 

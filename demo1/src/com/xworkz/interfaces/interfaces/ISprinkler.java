@@ -5,7 +5,7 @@ public interface ISprinkler {
     void stop();
     void schedule();
 
-    default void markLevel() {
+    default void holdFirm() {
         System.out.println("To mark using a level.");
     }
 

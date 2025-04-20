@@ -5,7 +5,7 @@ public interface ISmartPlug {
     void turnOff();
     void schedule();
 
-    default void lightArea() {
+    default void lockChuck() {
         System.out.println("To light up the work area.");
     }
 

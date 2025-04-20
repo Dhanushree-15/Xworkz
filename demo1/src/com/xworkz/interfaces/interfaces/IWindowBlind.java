@@ -5,7 +5,7 @@ public interface IWindowBlind {
     void close();
     void adjustTilt();
 
-    default void labelSpot() {
+    default void handleTool() {
         System.out.println("To label drilled spots.");
     }
 

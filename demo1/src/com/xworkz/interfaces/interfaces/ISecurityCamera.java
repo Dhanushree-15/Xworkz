@@ -5,7 +5,7 @@ public interface ISecurityCamera {
     void streamLive();
     void alertMotion();
 
-    default void checkBattery() {
+    default void measureTwice() {
         System.out.println("To check battery level.");
     }
 

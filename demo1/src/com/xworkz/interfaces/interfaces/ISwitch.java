@@ -5,7 +5,7 @@ public interface ISwitch {
     void flipOff();
     void status();
 
-    default void holdFirm() {
+    default void alignBracket() {
         System.out.println("To hold item firmly.");
     }
 

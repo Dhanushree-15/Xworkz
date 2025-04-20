@@ -5,7 +5,7 @@ public interface ITablet {
     void swipe();
     void installApp();
 
-    default void alignBracket() {
+    default void testFit() {
         System.out.println("To align the bracket correctly.");
     }
 

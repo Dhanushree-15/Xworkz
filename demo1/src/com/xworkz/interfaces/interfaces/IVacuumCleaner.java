@@ -5,7 +5,7 @@ public interface IVacuumCleaner {
     void stop();
     void changeMode();
 
-    default void smoothHole() {
+    default void testHold() {
         System.out.println("To smooth the hole edge.");
     }
 

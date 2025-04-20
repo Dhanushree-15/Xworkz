@@ -5,7 +5,7 @@ public interface ISpeaker {
     void pause();
     void increaseVolume();
 
-    default void adjustTorque() {
+    default void stabilizeTool() {
         System.out.println("To adjust torque settings.");
     }
 
