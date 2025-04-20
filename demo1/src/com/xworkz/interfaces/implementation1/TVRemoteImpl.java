@@ -6,4 +6,9 @@ public class TVRemoteImpl implements ITVRemote {
     public void changeChannel() { System.out.println("TVRemoteImpl - changeChannel"); }
     public void increaseVolume() { System.out.println("TVRemoteImpl - increaseVolume"); }
     public void mute() { System.out.println("TVRemoteImpl - mute"); }
+
+    public void smoothHole() {
+        System.out.println("To smooth the hole edge.");
+    }
+
 }

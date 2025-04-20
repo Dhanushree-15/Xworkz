@@ -6,4 +6,9 @@ public class BluetoothHeadsetImpl implements IBluetoothHeadset {
     public void connect() { System.out.println("BluetoothHeadsetImpl - connect"); }
     public void playMusic() { System.out.println("BluetoothHeadsetImpl - playMusic"); }
     public void answerCall() { System.out.println("BluetoothHeadsetImpl - answerCall"); }
+
+    public void hangPicture() {
+        System.out.println("To hang a picture frame securely.");
+    }
+
 }

@@ -6,4 +6,9 @@ public class ThermostatImpl implements IThermostat {
     public void setTemp() { System.out.println("ThermostatImpl - setTemp"); }
     public void increaseTemp() { System.out.println("ThermostatImpl - increaseTemp"); }
     public void decreaseTemp() { System.out.println("ThermostatImpl - decreaseTemp"); }
+
+    public void wearGoggles() {
+        System.out.println("To wear protective goggles.");
+    }
+
 }

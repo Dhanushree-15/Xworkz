@@ -4,4 +4,9 @@ public interface IWIFIExtender {
     void boostSignal();
     void connectDevice();
     void restart();
+
+    default void sealGap() {
+        System.out.println("To seal gap after drilling.");
+    }
+
 }

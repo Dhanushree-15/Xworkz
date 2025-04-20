@@ -6,4 +6,9 @@ public class HeaterImpl implements IHeater {
     public void turnOn() { System.out.println("HeaterImpl - turnOn"); }
     public void turnOff() { System.out.println("HeaterImpl - turnOff"); }
     public void setTemperature() { System.out.println("HeaterImpl - setTemperature"); }
+
+    public void hammerNail() {
+        System.out.println("To hammer a nail.");
+    }
+
 }

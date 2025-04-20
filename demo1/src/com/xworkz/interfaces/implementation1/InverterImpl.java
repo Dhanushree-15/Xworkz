@@ -6,4 +6,9 @@ public class InverterImpl implements IInverter {
     public void supplyPower() { System.out.println("InverterImpl - supplyPower"); }
     public void chargeBattery() { System.out.println("InverterImpl - chargeBattery"); }
     public void switchMode() { System.out.println("InverterImpl - switchMode"); }
+
+    public void findStud() {
+        System.out.println("To find a stud behind wall.");
+    }
+
 }

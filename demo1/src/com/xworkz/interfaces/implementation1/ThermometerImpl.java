@@ -6,4 +6,9 @@ public class ThermometerImpl implements IThermometer {
     public void measureTemp() { System.out.println("ThermometerImpl - measureTemp"); }
     public void reset() { System.out.println("ThermometerImpl - reset"); }
     public void calibrate() { System.out.println("ThermometerImpl - calibrate"); }
+
+    public void cutThrough() {
+        System.out.println("To cut through drywall.");
+    }
+
 }

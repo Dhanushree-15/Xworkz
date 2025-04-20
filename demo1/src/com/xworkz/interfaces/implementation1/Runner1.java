@@ -373,4 +373,9 @@ public class Runner1 {
         barcodeScannerImpl.connect();
 
     }
+
+    public void finishEdge() {
+        System.out.println("To finish edges cleanly.");
+    }
+
 }

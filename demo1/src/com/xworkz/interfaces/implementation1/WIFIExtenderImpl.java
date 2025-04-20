@@ -6,4 +6,9 @@ public class WIFIExtenderImpl implements IWIFIExtender {
     public void boostSignal() { System.out.println("WIFIExtenderImpl - boostSignal"); }
     public void connectDevice() { System.out.println("WIFIExtenderImpl - connectDevice"); }
     public void restart() { System.out.println("WIFIExtenderImpl - restart"); }
+
+    public void labelSpot() {
+        System.out.println("To label drilled spots.");
+    }
+
 }

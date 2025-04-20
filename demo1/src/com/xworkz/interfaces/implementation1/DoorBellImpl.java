@@ -6,4 +6,9 @@ public class DoorBellImpl implements IDoorBell {
     public void ring() { System.out.println("DoorBellImpl - ring"); }
     public void recordVisitor() { System.out.println("DoorBellImpl - recordVisitor"); }
     public void notifyUser() { System.out.println("DoorBellImpl - notifyUser"); }
+
+    public void chipPaint() {
+        System.out.println("To chip away old paint.");
+    }
+
 }

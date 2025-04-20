@@ -6,4 +6,9 @@ public class SmartFridgeImpl implements ISmartFridge {
     public void trackItems() { System.out.println("SmartFridgeImpl - trackItems"); }
     public void cool() { System.out.println("SmartFridgeImpl - cool"); }
     public void notify1() { System.out.println("SmartFridgeImpl - notify1"); }
+
+    public void lubricateBit() {
+        System.out.println("To lubricate the bit.");
+    }
+
 }

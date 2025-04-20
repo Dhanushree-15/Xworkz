@@ -12,4 +12,9 @@ public class AirConditionerImpl implements IAirConditioner {
     public void setTemperature() {
         System.out.println("AirConditionerImpl - setTemperature");
     }
+
+    public void drillWall() {
+        System.out.println("To make holes in concrete walls.");
+    }
+
 }

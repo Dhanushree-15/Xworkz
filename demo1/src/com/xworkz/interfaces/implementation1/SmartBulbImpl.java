@@ -6,4 +6,9 @@ public class SmartBulbImpl implements ISmartBulb {
     public void changeColor() { System.out.println("SmartBulbImpl - changeColor"); }
     public void dimLight() { System.out.println("SmartBulbImpl - dimLight"); }
     public void turnOff() { System.out.println("SmartBulbImpl - turnOff"); }
+
+    public void storeTool() {
+        System.out.println("To store the tool properly.");
+    }
+
 }

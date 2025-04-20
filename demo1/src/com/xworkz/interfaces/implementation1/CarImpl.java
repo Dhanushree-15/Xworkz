@@ -6,4 +6,9 @@ public class CarImpl implements ICar {
     public void startEngine() { System.out.println("CarImpl - startEngine"); }
     public void stopEngine() { System.out.println("CarImpl - stopEngine"); }
     public void honk() { System.out.println("CarImpl - honk"); }
+
+    public void boreHole() {
+        System.out.println("To bore a small hole for wiring.");
+    }
+
 }

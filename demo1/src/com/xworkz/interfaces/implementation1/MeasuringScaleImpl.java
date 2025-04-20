@@ -6,4 +6,9 @@ public class MeasuringScaleImpl implements IMeasuringScale {
     public void weigh() { System.out.println("MeasuringScaleImpl - weigh"); }
     public void tare() { System.out.println("MeasuringScaleImpl - tare"); }
     public void reset() { System.out.println("MeasuringScaleImpl - reset"); }
+
+    public void pushLightly() {
+        System.out.println("To apply light pressure.");
+    }
+
 }

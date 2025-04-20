@@ -6,4 +6,9 @@ public class PhoneImpl implements IPhone {
     public void makeCall() { System.out.println("PhoneImpl - makeCall"); }
     public void receiveCall() { System.out.println("PhoneImpl - receiveCall"); }
     public void charge() { System.out.println("PhoneImpl - charge"); }
+
+    public void chooseBit() {
+        System.out.println("To choose proper drill bit.");
+    }
+
 }

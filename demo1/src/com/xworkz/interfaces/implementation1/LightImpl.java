@@ -6,4 +6,9 @@ public class LightImpl implements ILight {
     public void switchOn() { System.out.println("LightImpl - switchOn"); }
     public void switchOff() { System.out.println("LightImpl - switchOff"); }
     public void dim() { System.out.println("LightImpl - dim"); }
+
+    public void drillMetal() {
+        System.out.println("To drill into metal surface.");
+    }
+
 }
